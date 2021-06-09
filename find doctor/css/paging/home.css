@@ -1,0 +1,372 @@
+body {
+    background-color: #f1f1f1;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    /*align-content: center;*/
+    align-items: center;
+    position: absolute;
+    top: 0.139rem;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 0 0.417rem;
+    margin: 0 !important;
+}
+
+.top img {
+    width: 0.944rem;
+    height: 0.944rem;
+}
+
+.top_search {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_glass {
+    position: absolute;
+    top: 0.24rem;
+    left: 0.222rem;
+    font-size: 0.5rem;
+}
+
+.top_search input {
+    width: 100%;
+    height: 0.944rem;
+    font-size: 0.293rem;
+    border-radius: 0.472rem;
+    padding-left: 0.889rem;
+}
+
+
+/*swiper样式   头部轮播图*/
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    /*font-size: 0.389rem;*/
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 0.5rem;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*end*/
+
+.top_cor {
+    width: 100%;
+    height: 5.222rem;
+}
+
+.top_cor img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_nav {
+    height: 2.528rem;
+}
+
+.main_ico {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main_ico i {
+    margin-top: 0.139rem;
+    color: black;
+    font-size: 0.32rem;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.main_lump img {
+    width: 1.389rem;
+    height: 1.389rem;
+}
+
+.hot {
+    height: 5.2rem;
+}
+
+.hot_top {
+    height: 0.72rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+}
+
+.hot_wen {
+    padding-left: 0 !important;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.417rem;
+}
+
+.hot_wen img {
+    margin-left: 0.267rem;
+}
+
+.hot_wen span {
+    white-space: nowrap;
+}
+
+.square {
+    display: inline-block;
+    width: 0.194rem;
+    height: 0.72rem;
+    background-color: #003cbf;
+    margin-right: 0.139rem;
+}
+
+.more {
+    padding-left: 0;
+}
+
+.hot_more {
+    font-size: 0.278rem;
+    font-weight: 400;
+    color: black;
+    white-space: nowrap;
+}
+
+.hot_main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.133rem 0.167rem 0;
+    height: 4.373rem;
+}
+
+.hot_plate {
+    position: relative;
+    /*width: 4rem;*/
+    width: 48%;
+    height: 1.707rem;
+    border-radius: 0.333rem;
+}
+
+.hot_plate:nth-child(2),
+.hot_plate:nth-child(4) {
+    margin-left: 0.139rem;
+}
+
+.hot_plate:nth-child(3),
+.hot_plate:nth-child(4) {
+    margin-top: 0.139rem;
+}
+
+.hot_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.hot_intro {
+    position: relative;
+    z-index: 99;
+    padding-top: 0.139rem;
+    padding-left: 0.267rem;
+}
+
+.hot_intro h5 {
+    position: absolute;
+    top: 0.213rem;
+    left: 0;
+    font-size: 0.293rem;
+}
+
+.hot_intro h6 {
+    display: block;
+    position: absolute;
+    top: 0.64rem;
+    left: 0.16rem;
+    font-size: 0.213rem !important;
+    color: #595858;
+    white-space: nowrap;
+}
+
+.foot {
+    margin-top: 0.267rem;
+    width: 100%;
+    height: 2.347rem;
+    color: #eeeeee;
+}
+
+.new {
+    height: 4.667rem;
+}
+
+.new_top {
+    height: 0.72rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+}
+
+.new_topImg {
+    width: 0.587rem;
+    height: 0.587rem;
+}
+
+.new_main {
+    height: 3.84rem;
+}
+
+.new_left img {
+    position: relative;
+    top: 0.373rem;
+    left: 0.267rem;
+    width: 3.547rem;
+    height: 3.147rem;
+}
+
+.new_left h1 {
+    position: absolute;
+    top: 0.533rem;
+    left: 1.76rem;
+    font-size: 0.533rem;
+}
+
+.new_left a {
+    width: 1.52rem;
+    height: 0.32rem;
+    border-radius: 0.133rem;
+    position: absolute;
+    top: 1.76rem;
+    left: 1.653rem;
+    background-color: #fee9c0;
+    font-size: 0.267rem;
+    text-align: center;
+    color: black;
+    line-height: 0.32rem;
+}
+
+.new_rightTop,
+.new_rightBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 3.547rem;
+    height: 1.387rem;
+    margin-top: 0.267rem;
+    border-radius: 0.213rem;
+    background-color: #fffce9;
+}
+
+.new_mon {
+    /*margin-left: 0.133rem;*/
+    display: inline-block;
+    font-size: 0.533rem;
+    color: #fc5707;
+    /*line-height: 1.387rem;*/
+}
+
+.new_square {
+    display: inline-block;
+    width: 0.107rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 1.44rem;
+    background-color: white;
+}
+
+.newRef {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 100%;
+    position: relative;
+    top: 0;
+    right: -0.213rem;
+}
+
+.newRef span {
+    font-size: 0.267rem;
+    color: #fc5707;
+    white-space: nowrap;
+}
+
+.newRef span i {
+    display: inline-block;
+    height: 0.48rem;
+    width: 50%;
+    position: absolute;
+    top: 0.16rem;
+    left: 50%;
+    border-bottom: 0.027rem dashed #fc5707;
+    transform: translateX(-50%);
+}
+
+.newRef a {
+    margin-top: 0.16rem;
+    width: 1.493rem;
+    height: 0.427rem;
+    background-color: #ebb335;
+    border-radius: 0.213rem;
+    color: white;
+    text-align: center;
+    line-height: 0.427rem;
+    font-size: 0.213rem;
+}
+

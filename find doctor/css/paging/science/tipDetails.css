@@ -1,0 +1,142 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+    position: relative;
+    z-index: 99;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.227rem;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.48rem;
+    color: #00133d
+}
+
+.title a {
+    display: inline-block;
+    font-size: 0.48rem;
+    color: #00133d
+}
+
+.pic {
+    margin-top: 0.267rem;
+    width: 100%;
+    height: 4.907rem;
+    border-radius: 0.133rem;
+    background-color: #003cbf;
+}
+
+.pic img {
+    position: relative;
+    bottom: -0.587rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8.053rem;
+    height: 4.347rem;
+}
+
+.placard {
+    margin-top: 0.4rem;
+    padding: 0 0.133rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.267rem;
+    /*line-height: 2.267rem;*/
+    border-radius: 0.133rem;
+    background-color: #f9f9f9;
+    font-size: 0.48rem;
+}
+
+.textMain {
+    font-size: 0.373rem;
+}
+
+.foot {
+    padding: 0 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.347rem;
+    background-color: white;
+}
+
+.love, .collect {
+    width: 1.28rem;
+    height: 1.28rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.64rem;
+}
+
+.love {
+    background-color: #ffeeed;
+}
+
+.collect {
+    background-color: #e5faff;
+}
+
+.foot img {
+    width: 0.533rem;
+    height: 0.533rem;
+}
+
+.foot a{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 4.88rem;
+    height: 1.28rem;
+    background-color: #f0f2f3;
+    border-radius: 0.133rem;
+    font-size: 0.373rem;
+    color: #95a0b8;
+}
+
+.foot a img {
+    position: absolute;
+    top: 50%;
+    left: 0.4rem;
+    transform: translateY(-50%);
+}
+
+.foot a i {
+    width: 100%;
+    text-align: center;
+}
+
+.perch {
+    width: 100%;
+    height: 2.347rem;
+    margin-top: 0.4rem;
+    color: white;
+}

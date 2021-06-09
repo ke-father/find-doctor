@@ -1,0 +1,268 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.rapid {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 0.507rem;
+    left: 0;
+    display: block;
+    width: 100%;
+    color: #2b2b2b;
+    font-size: 0.4rem;
+}
+
+.search {
+    width: 100%;
+    height: 0.853rem;
+    margin-top: 0.267rem;
+    font-size: 0.32rem;
+    border-radius: 0.427rem;
+    padding-left: 0.8rem;
+    border: 0.027rem solid #6c7176;
+}
+
+.search_glass {
+    position: absolute;
+    top: 0.507rem;
+    left: 1.333rem;
+    font-size: 0.427rem;
+}
+
+.rapid_search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.4rem;
+    /*margin-top: 0.267rem;*/
+}
+
+.rapid_search li {
+    height: 0.533rem;
+    line-height: 0.533rem !important;
+}
+
+.rapid_search li a {
+    font-size: 0.32rem;
+    color: #b6afaf;
+}
+
+.rapid_searchBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.067rem;
+    /*margin-top: 0.267rem;*/
+}
+
+.drug {
+    margin-top: 0.4rem;
+}
+
+.drug_block {
+    margin-bottom: 0.4rem;
+    padding: 0 0.747rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4.107rem;
+    border-radius: 0.533rem;
+    /*background-color: #ffeeed;*/
+}
+
+.drug_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.707rem;
+    height: 2.987rem;
+}
+
+.drug_left a {
+    width: 1.707rem;
+    height: 1.707rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.133rem;
+    background-color: #ffdfdd;
+}
+
+.drug_left span {
+    display: block;
+    border: none;
+    width: 0.64rem;
+    height: 0.64rem;
+}
+
+.drug_right {
+    display: flex;
+    align-items: center;
+    height: 2.987rem;
+    position: relative;
+    padding-left: 0.8rem;
+}
+
+.sort {
+    position: absolute;
+    top: 0;
+    left: 1.173rem;
+    width: 1.173rem;
+    height: 0.427rem;
+    color: white;
+    font-size: 0.267rem;
+    text-align: center;
+    line-height: 0.427rem;
+    background-color: #ff5c4d;
+    border-radius: 0.533rem;
+}
+
+.drug_right p {
+    margin: 0;
+    font-size: 0.373rem;
+    display: block;
+    width: 100%;
+    /*height: 1.12rem;*/
+    /*overflow: hidden;*/
+}
+
+.select_drug {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    width: 2.32rem;
+    height: 0.747rem;
+    line-height: 0.747rem;
+    text-align: center;
+    color: white;
+    font-size: 0.267rem;
+    background-color: #ff5c4d;
+    border-radius: 0.533rem;
+}
+
+.drug_block:nth-of-type(odd) {
+    background-color: #ffeeed;
+}
+
+.drug_block:nth-of-type(even) {
+    background-color: #f4f5f8;
+}
+
+.drug_block:nth-of-type(3n+0) {
+    background-color: #fffce9;
+}
+
+.drug_block:nth-of-type(odd) .drug_left a {
+    background-color: #ffdfdd;
+}
+
+.drug_block:nth-of-type(odd) .drug_left span {
+    background: url("../../../uploads/Icons-2@2x.png") no-repeat center;
+    background-size: contain;
+}
+
+.drug_block:nth-of-type(odd) .sort,
+.drug_block:nth-of-type(odd) .select_drug {
+    background-color: #ff5c4d;
+}
+
+.drug_block:nth-of-type(even) .drug_left a {
+    background-color: #dbe2f3;
+}
+
+.drug_block:nth-of-type(even) .drug_left span {
+    background: url("../../../uploads/Icons-3@2x.png") no-repeat center;
+    background-size: contain;
+}
+
+.drug_block:nth-of-type(even) .sort,
+.drug_block:nth-of-type(even) .select_drug {
+    background-color: #95a0b8;
+}
+
+.drug_block:nth-of-type(3n+0) .drug_left a {
+    background-color: #fdf4d6;
+}
+
+.drug_block:nth-of-type(3n+0) .drug_left span {
+    background: url("../../../uploads/Icons-1@2x.png") no-repeat center;
+    background-size: contain;
+}
+
+.drug_block:nth-of-type(3n+0) .sort,
+.drug_block:nth-of-type(3n+0) .select_drug {
+    background-color: #ebb335;
+}
+
+.foot {
+    margin-top: 0.267rem;
+    width: 100%;
+    height: 1.387rem;
+    color: #ffffff;
+}
+
+.shop_drug {
+    padding-left: 0.4rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1.387rem;
+    background-color: #003cbf;
+}
+
+.shop_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.333rem;
+    height: 1.333rem;
+    border-radius: 0.667rem;
+    background-color: white;
+}
+
+.shop_left img {
+    width: 0.907rem;
+    height: 0.907rem;
+}
+
+.shop_drug p {
+    margin: 0 0 0 0.4rem;
+    font-size: 0.32rem;
+    color: white;
+}
+
+.shop_drug > a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 3.04rem;
+    height: 100%;
+    color: black;
+    font-size: 0.373rem;
+    line-height: 1.387rem;
+    text-align: center;
+    background-color: white;
+}
+

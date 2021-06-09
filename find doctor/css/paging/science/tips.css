@@ -1,0 +1,125 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+    position: relative;
+    z-index: 99;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.227rem;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.48rem;
+    color: #bfbfbf;
+}
+
+.title a {
+    display: inline-block;
+    font-size: 0.48rem;
+    color: white;
+}
+
+.bco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8.267rem;
+    background-color: #003cbf;
+}
+
+.tips {
+    width: 100%;
+    height: 5.333rem;
+    margin-top: 0.8rem;
+    position: relative;
+    z-index: 99;
+}
+
+.tips_block {
+    margin-top: 0.427rem;
+    padding: 0 0.8rem 0 0.427rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.493rem;
+    border-radius: 0.133rem;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.tips_block a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.427rem;
+    color: white;
+
+}
+
+.tips_block img {
+    margin-right: 0.32rem;
+    width: 0.64rem;
+    height: 0.64rem;
+}
+
+.pic {
+    margin-top: 1.067rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5.12rem;
+}
+
+.pic img {
+    z-index: 99;
+    width: 7.013rem;
+    height: 5.12rem;
+}
+
+.pic_block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.667rem;
+    background-color: #003cbf;
+    border-radius: 0.133rem;
+}
+
+.textMain {
+    margin-top: 0.533rem;
+}
+
+.textMain h3 {
+    font-size: 0.533rem;
+    margin: 0;
+}
+
+.textMain p {
+    line-height: 0.667rem;
+    margin-top: 0.267rem;
+    font-size: 0.373rem;
+}

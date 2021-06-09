@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    引入bootstarp样式-->
+    <link rel="stylesheet" href="../../../lib/css/bootstrap.css">
+<!--    引入swiper 样式-->
+    <link rel="stylesheet" href="../../../lib/css/swiper-bundle.min.css">
+    <!--    引入公共样式-->
+    <link rel="stylesheet" href="../../../css/common.css">
+    <!--    引入本页样式-->
+    <link rel="stylesheet" href="../../../css/paging/home/fast/drug_intro.css">
+    <title>寻医</title>
+</head>
+<body>
+<div class="container-fluid">
+    <!--    头部标题-->
+    <div class="title">
+        <span class="glyphicon glyphicon-chevron-left arrows"></span>
+        <a href="javascript:;">药品详情页</a>
+    </div>
+    <!--    end-->
+
+    <div class="swiper-container drug_icon">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <span class="drug_pic">
+                    <img src="../../../uploads/Icons-24px-Tablet@2x.png" alt="药品">
+                </span>
+            </div>
+            <div class="swiper-slide">
+                <span class="drug_pic">
+                    <img src="../../../uploads/Icons-24px-Tablet@2x.png" alt="药品">
+                </span>
+            </div>
+            <div class="swiper-slide">
+                <span class="drug_pic">
+                    <img src="../../../uploads/Icons-24px-Tablet@2x.png" alt="药品">
+                </span>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="intro">
+        <h5>星元佳 氯雷他定片10毫克*6片 </h5>
+        <ul>
+            <li>
+                <a href="javascript:;">益丰大药房发货</a>
+            </li>
+            <li>
+                <a href="javascript:;">正品保障</a>
+            </li>
+            <li>
+                <a href="javascript:;">满￥99包邮</a>
+            </li>
+            <li>
+                <a href="javascript:;">不支持无理由退货</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="ing">
+        <h4>【药品成分】</h4>
+        <i>桉油精，柠檬烯及A-蒎烯</i>
+    </div>
+
+    <div class="ing">
+        <h4>【用药禁忌】</h4>
+        <i>对本品过敏者禁用</i>
+    </div>
+
+    <div class="ing">
+        <h4>【用法用量】</h4>
+        <i>口服。成年人;急性患者一次0.3g(1粒)，一日3-4次。</i>
+    </div>
+
+    <div class="number">
+        <h4>数量</h4>
+        <span class="line_parent">
+            <span class="line"></span>
+        </span>
+        <span class="box">
+            <span class="triangle"></span>
+            <i>两盒</i>
+        </span>
+    </div>
+
+    <button class="now">立即购买</button>
+</div>
+
+<!--引入jquery-->
+<script src="../../../lib/js/jQuery.js"></script>
+<!--引入swiper-->
+<script src="../../../lib/js/swiper-bundle.min.js"></script>
+<!--引入flexible 实现 rem 自动-->
+<script src="../../../lib/js/flexible.js"></script>
+<!--引入本页js-->
+<script src="../../../js/paging/home/fast/drug_intro.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+    });
+</script>
+</body>
+</html>

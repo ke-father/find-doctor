@@ -1,0 +1,122 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.227rem;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.48rem;
+    color: #bfbfbf;
+}
+
+.title a {
+    display: inline-block;
+    font-size: 0.48rem;
+    color: #707070;
+}
+
+.family {
+    margin-top: 0.4rem;
+}
+
+/*.family_main li:first-child {*/
+/*    margin-top: 0.4rem !important;*/
+/*}*/
+
+.family_main li {
+    margin-top: 0.4rem;
+    padding: 0.4rem 0.533rem;
+    width: 100%;
+    height: 2.667rem;
+    border-radius: 0.133rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.family_main li:first-child {
+    margin-top: 0.267rem;
+}
+
+.family_main li:nth-child(odd) {
+    background-color: #ffeeed;
+}
+
+.family_main li:nth-child(even) {
+    background-color: #f4f5f8;
+}
+
+.family_main li:nth-child(3n+0) {
+    background-color: #fffce9;
+}
+
+.family_main li > a {
+    width: 1.68rem;
+    height: 2.107rem;
+}
+
+.family_left {
+    padding: 0.213rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.family_left span {
+    font-size: 0.373rem;
+    color: #95a0b8;
+}
+
+.doctor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.doctor_name {
+    margin-right: 0.133rem;
+    color: black;
+    font-size: 0.48rem;
+}
+
+.doctor_ico {
+    margin-left: 0.267rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.72rem;
+    height: 0.72rem;
+    border-radius: 0.373rem;
+}
+
+.family_right {
+    width: 1.68rem;
+    height: 2.107rem;
+}
+
+.foot {
+    margin-top: 0;
+    width: 100%;
+    height: 2.347rem;
+    color: white;
+}

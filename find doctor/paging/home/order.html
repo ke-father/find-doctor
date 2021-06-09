@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    引入bootstarp样式-->
+    <link rel="stylesheet" href="../../lib/css/bootstrap.css">
+    <!--    引入公共样式-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--    引入本页样式-->
+    <link rel="stylesheet" href="../../css/paging/home/order.css">
+    <title>寻医</title>
+</head>
+<body>
+<div class="container-fluid">
+    <!--    头部标题-->
+    <div class="title">
+        <span class="glyphicon glyphicon-chevron-left arrows"></span>
+        <a href="order.html">我的预约</a>
+    </div>
+    <!--    end-->
+
+    <div class="search_box">
+        <input type="search" placeholder="搜索医院 地区">
+    </div>
+
+    <div class="order">
+        <h3>挂号</h3>
+        <form class="orderForm">
+            <div class="order_block">
+                <h5>就诊地区：</h5>
+                <input type="text">
+            </div>
+            <div class="order_block">
+                <h5>性别：</h5>
+                <input type="text">
+            </div>
+            <div class="order_block">
+                <h5>出生日期：</h5>
+                <input type="text">
+            </div>
+            <div class="order_block">
+                <h5>找医院：</h5>
+                <input type="text" name="hospital">
+            </div>
+            <input type="submit" value="确认预约">
+        </form>
+    </div>
+
+    <div class="me_order">
+        <h3>我的预约</h3>
+        <div class="me_main">
+            <div class="col-xs-4 col-md-4">
+                <a href="javascript:;">全部</a>
+            </div>
+            <div class="col-xs-4 col-md-4">
+                <a href="javascript:;">进行中</a>
+            </div>
+            <div class="col-xs-4 col-md-4">
+                <a href="javascript:;">已结算</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hospital_order">
+        <h3>医院选择</h3>
+        <div class="me_main">
+            <div class="col-xs-4 col-md-4">
+                <a href="javascript:;">推荐意愿</a>
+            </div>
+            <div class="col-xs-4 col-md-4">
+                <a href="javascript:;">附近医院</a>
+            </div>
+            <div class="col-xs-4 col-md-4">
+                <a href="javascript:;">海外医院</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--引入jquery-->
+<script src="../../lib/js/jQuery.js"></script>
+<!--引入flexible 实现 rem 自动-->
+<script src="../../lib/js/flexible.js"></script>
+<!--引入本页js-->
+<script src="../../js/paging/home/order.js"></script>
+</body>
+</html>

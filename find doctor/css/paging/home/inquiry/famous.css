@@ -1,0 +1,228 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0.267rem 0.4rem 0;
+}
+
+/*.main {*/
+/*    !*background-color: white;*!*/
+/*    margin: 0.278rem 0.417rem 0;*/
+/*    padding: 0.139rem 0.278rem;*/
+/*    border-radius: 0.333rem;*/
+/*}*/
+
+.bgdColor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.733rem;
+    background-color: #003cbf;
+}
+
+.main {
+    position: relative;
+    z-index: 99;
+}
+
+.famous_top {
+    position: relative;
+    height: 6.453rem;
+}
+
+.famous_top h1 {
+    position: relative;
+    margin: 0;
+    color: white;
+    font-size: 0.48rem;
+    text-align: center;
+}
+
+.famous_top h1 a {
+    font-size: 0.4rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.top_search {
+    margin-top: 0.267rem;
+    position: relative;
+    width: 100%;
+    height: 1.28rem;
+    z-index: 99;
+}
+
+.top_search input {
+    padding-left: 0.533rem;
+    width: 100%;
+    height: 1.28rem;
+    background-color: rgba(255, 255, 255, .9);
+    font-size: 0.373rem;
+    border-radius: 0.64rem;
+}
+
+.search_glass {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.28rem;
+    height: 1.28rem;
+    color: #003cbf;
+    font-size: 0.48rem;
+    background-color: white;
+    border-radius: 0.64rem;
+}
+
+.famous_top img {
+    position: absolute;
+    top: 1.92rem;
+    width: 100%;
+    height: 4.507rem;
+}
+
+.junior {
+    margin-top: 0.267rem;
+}
+
+.junior_main {
+    margin-top: 0.267rem;
+}
+
+.junior > h3 {
+    margin: 0;
+    font-size: 0.533rem;
+}
+
+.junior > span {
+    font-size: 0.373rem;
+    white-space: nowrap;
+}
+
+.junior_echo {
+    width: 100%;
+    height: 2.8rem;
+}
+
+.junior_ico {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 1.707rem;
+    height: 1.707rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.853rem;
+}
+
+.icon img {
+    width: 0.64rem;
+    height: 0.64rem;
+}
+
+.junior_ico a {
+    display: flex;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.junior_ico i {
+    margin-top: 0.267rem;
+    display: block;
+    width: 100%;
+    font-size: 0.427rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.family {
+    margin-top: 0.4rem;
+}
+
+.family_main li:first-child {
+    margin-top: 0.4rem !important;
+}
+
+.family_top h3 {
+    margin: 0;
+    font-size: 0.533rem;
+}
+
+.family_top span {
+    color: #95a0b8;
+    font-size: 0.373rem;
+}
+
+.family_main li {
+    margin-top: 0.667rem;
+    padding: 0.4rem 0.533rem;
+    width: 100%;
+    height: 2.667rem;
+    border-radius: 0.133rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.family_main li > a {
+    width: 1.68rem;
+    height: 2.107rem;
+}
+
+.family_left {
+    padding: 0.213rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.family_left span {
+    font-size: 0.373rem;
+    color: #95a0b8;
+}
+
+.doctor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.doctor_name {
+    margin-right: 0.133rem;
+    color: black;
+    font-size: 0.48rem;
+}
+
+.doctor_ico {
+    margin-left: 0.267rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.72rem;
+    height: 0.72rem;
+    border-radius: 0.373rem;
+}
+
+.family_right {
+    width: 1.68rem;
+    height: 2.107rem;
+}
+
+.foot {
+    margin-top: 0;
+    width: 100%;
+    height: 2.347rem;
+    color: white;
+}

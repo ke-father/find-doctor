@@ -1,0 +1,214 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.227rem;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.48rem;
+    color: #bfbfbf;
+}
+
+.title a {
+    display: inline-block;
+    font-size: 0.48rem;
+    color: #707070;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    /*background: #eee;*/
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 0.373rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 0.48rem;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.drug_icon {
+    margin-top: 0.133rem;
+    width: 100%;
+    height: 4.853rem;
+    border-top: 0.027rem solid #e2e5e7;
+    border-bottom: 0.027rem solid #e2e5e7;
+}
+
+.drug_pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.333rem;
+    height: 3.333rem;
+    border-radius: 1.68rem;
+    background-color: #e9eefb;
+}
+
+.drug_pic img {
+    width: 1.067rem;
+    height: 1.067rem;
+}
+
+.intro {
+    margin-top: 0.4rem;
+}
+
+.intro h5 {
+    font-size: 0.373rem;
+    margin: 0;
+}
+
+.intro ul {
+    margin-top: 0.267rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.intro li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.133rem;
+    height: 0.96rem;
+    padding: 0 0.427rem;
+    background-color: #f0f2f3;
+    border-radius: 0.133rem;
+}
+
+.intro a {
+    color: black;
+    font-size: 0.267rem;
+    text-align: center;
+}
+
+.ing {
+    margin-top: 0.4rem;
+    width: 100%;
+}
+
+.ing h4 {
+    font-size: 0.373rem;
+    margin: 0;
+}
+
+.ing i {
+    font-size: 0.373rem;
+    color: #95a0b8;
+}
+
+.number {
+    margin-top: 0.267rem;
+}
+
+.number h4 {
+    font-size: 0.373rem;
+    margin: 0;
+}
+
+.line_parent {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0.107rem;
+    background-color: #f0f2f3;
+}
+
+.line {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 0.107rem;
+    background-color: #003cbf;
+}
+
+.box {
+    margin-top: 0.32rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.373rem;
+    height: 0.533rem;
+    border-radius: 0.107rem;
+    background-color: #003cbf;
+    font-size: 0.32rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle {
+    position: absolute;
+    top: -0.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /*background-color: black;*/
+    border: 0.213rem solid;
+    border-color: transparent transparent #003cbf transparent;
+    display: block;
+}
+
+.now {
+    margin-top: 0.8rem;
+    width: 100%;
+    height: 1.28rem;
+    border: none;
+    background-color: #003cbf;
+    border-radius: 0.133rem;
+    color: white;
+    font-size: 0.48rem;
+}

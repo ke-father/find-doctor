@@ -1,0 +1,64 @@
+body {
+    background-color: #f1f1f1;
+    height: 20.8rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+
+iframe {
+    width: 10rem;
+    height: 20.8rem;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+/*底部导航栏*/
+.footer_nav {
+    margin: 0;
+    padding: 0 0.533rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.347rem;
+    background-color: white;
+    z-index: 999;
+}
+
+.footer_ico {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.footer_ico i {
+    margin-top: 0.133rem;
+    font-size: 0.293rem;
+    color: black;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.icon_lump {
+    display: block;
+    width: 0.907rem;
+    height: 0.907rem;
+}
+
+.icon_lump img {
+    width: 100%;
+    height: 100%;
+}
