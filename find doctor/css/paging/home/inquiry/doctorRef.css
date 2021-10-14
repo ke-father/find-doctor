@@ -59,7 +59,7 @@ body {
 }
 
 .doctor_main > img {
-    width: 2.213rem;
+    /*width: 2.213rem;*/
     height: 2.747rem;
 }
 
@@ -151,7 +151,7 @@ body {
 }
 
 .evaluate {
-    margin-top: 10px;
+    margin-top: 0.267rem;
 }
 
 .evaluate_top {
@@ -172,14 +172,14 @@ body {
 }
 
 .evaluate_main li {
-    margin-top: 10px;
-    height: 96px;
+    margin-top: 0.267rem;
+    height: 2.56rem;
     background-color: #e5ebf9;
-    border-radius: 5px;
+    border-radius: 0.133rem;
 }
 
 .evaluate_block {
-    padding: 16px 8px;
+    padding: 0.427rem 0.213rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -189,43 +189,43 @@ body {
 }
 
 .evaluate_date {
-    padding: 8px 14px;
+    padding: 0.213rem 0.373rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 66px;
+    width: 1.333rem;
+    height: 1.76rem;
     color: white;
-    font-size: 14px;
+    font-size: 0.373rem;
     text-align: center;
     background-color: #003cbf;
-    border-radius: 5px;
+    border-radius: 0.133rem;
 }
 
 .evaluate_date span {
-    font-size: 20px;
+    font-size: 0.533rem;
 }
 
 .evaluate_details {
-    padding: 8px 5px 0 8px;
+    padding: 0.213rem 0.133rem 0 0.213rem;
     width: 100%;
     height: 100%;
 }
 
 .evaluate_details h5 {
     margin: 0;
-    font-size: 18px;
+    font-size: 0.48rem;
     font-weight: 700;
 }
 
 .evaluate_details i {
     width: 100%;
-    height: 20px;
-    margin-top: 10px;
+    height: 0.533rem;
+    margin-top: 0.267rem;
     display: block;
     color: #95a0b8;
-    font-size: 14px;
+    font-size: 0.373rem;
     overflow: hidden;
 }
 

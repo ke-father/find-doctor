@@ -1,0 +1,235 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.rapid {
+    position: relative;
+}
+
+.search {
+    width: 100%;
+    height: 0.853rem;
+    margin-top: 0.267rem;
+    font-size: 0.32rem;
+    border-radius: 0.427rem;
+    padding-left: 0.8rem;
+    border: 0.027rem solid #6c7176;
+}
+
+.search_glass {
+    position: absolute;
+    top: 0.507rem;
+    left: 0.267rem;
+    font-size: 0.427rem;
+}
+
+.rapid_search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.4rem;
+    /*margin-top: 0.267rem;*/
+}
+
+.rapid_search li {
+    height: 0.533rem;
+    line-height: 0.533rem !important;
+}
+
+.rapid_search li a {
+    font-size: 0.32rem;
+    color: #b6afaf;
+}
+
+.sym {
+    position: relative;
+    width: 100%;
+    height: 5.653rem;
+    margin-top: 0.4rem;
+    /*border: 0.027rem solid black;*/
+    /*overflow: hidden;*/
+    /*box-shadow: 0rem 0.027rem 0.133rem #cccccc;*/
+}
+
+.sym_top {
+    width: 100%;
+    height: 0.533rem;
+}
+
+.sym_topWen {
+    padding: 0;
+    margin: 0;
+    font-size: 0.4rem;
+    font-weight: 700;
+}
+
+.sym_main {
+    position: relative;
+    width: 100%;
+    height: 5.12rem;
+    border-radius: 0.133rem;
+    /*box-shadow: 0.027rem 0.027rem 0.133rem #cccccc;*/
+    padding: 0.267rem 0.267rem 0;
+}
+
+/*动态轮转图标*/
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    /*background: #eee;*/
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 0.373rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 0.48rem;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*end*/
+
+.sym_mainTop,
+.sym_mainBottom {
+    display: block;
+    width: 8.667rem !important;
+}
+
+.sym_block {
+    display: inline-block;
+    margin: 0 0.267rem;
+    width: 1.333rem;
+    height: 2.053rem;
+    /*background-color: #fc5707;*/
+}
+
+.sym_block img {
+    width: 1.333rem;
+    height: 1.333rem;
+}
+
+.sym_block i {
+    font-size: 0.293rem;
+}
+
+.adver {
+    margin-top: 0.4rem;
+    width: 100%;
+    height: 1.84rem;
+    background-color: #e7e7e7;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adver img {
+    width: 0.907rem;
+    height: 0.907rem;
+}
+
+.adver_echo {
+    font-size: 0.4rem;
+    height: 100%;
+    width: 6.293rem;
+    padding: 0.4rem 0.667rem;
+}
+
+.adver_echo span {
+    display: block;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.adver_echo i {
+    margin-left: 1.067rem;
+    white-space: nowrap;
+}
+
+.breathe,
+.skin {
+    width: 100%;
+    height: 2.64rem;
+}
+
+.breathe_topWen {
+    font-size: 0.4rem;
+    font-weight: 700;
+}
+
+.breathe_main {
+    margin-top: 0.4rem;
+}
+
+.breathe_main a {
+    width: 2.747rem;
+    height: 1.44rem;
+    border-radius: 0.4rem;
+    border: 0.027rem solid #000000;
+    background-color: #f3f3f3;
+    font-size: 0.293rem;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 1.44rem;
+    color: black;
+}
+
+.breathe_main a:nth-child(2),
+.breathe_main a:nth-child(3) {
+    margin-left: 0.4rem;
+}
+
+.skin {
+    margin-top: 0.267rem;
+}
+
+.skin_topWen {
+    margin-top: 0;
+    font-size: 0.4rem;
+    font-weight: 700;
+}
+
+.foot {
+    margin-top: 0;
+    width: 100%;
+    height: 2.347rem;
+    color: white;
+}

@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--    引入bootstarp样式-->
     <link rel="stylesheet" href="../../../lib/css/bootstrap.css">
+<!--    引入layui-->
+    <link rel="stylesheet" href="../../../lib/layui/css/layui.css">
     <!--    引入公共样式-->
     <link rel="stylesheet" href="../../../css/common.css">
     <!--    引入本页样式-->
@@ -19,45 +21,17 @@
     <div class="bgdColor"></div>
     <!--    end-->
 
-    <a href="office.html" class="glyphicon glyphicon-chevron-left arrow"></a>
+    <a href="javascript:;" class="glyphicon glyphicon-chevron-left arrow"></a>
 
     <div class="doctor_name">
         <div class="doctor_main">
-            <img src="../../../uploads/Component-Doctor No 4@2x.png" alt="医生头像">
-            <div class="name_main">
-                <h5>杜近东</h5>
-                <span>新生儿科 主任医师</span>
-                <ul>
-                    <li>
-                        <a href="javascript:;" style="background-color: #FFEEED;">
-                            <img src="../../../uploads/dianhua.png" alt="电话">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" style="background-color: #F4F5F8;">
-                            <img src="../../../uploads/shiping.png" alt="视频">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" style="background-color: #FFFCE9;">
-                            <img src="../../../uploads/weizhi.png" alt="位置">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<!--            医生信息框-->
         </div>
         <button>立即预约</button>
     </div>
 
     <div class="onLine">
-        <div class="online_top">
-            <h3>擅长及诊所介绍</h3>
-            <a href="javascript:;" class="onLine_more">
-                更多
-                <span class="glyphicon glyphicon-chevron-right" style="color: #95a0b8"></span>
-            </a>
-        </div>
-        <p>儿科疾病，尤其是小儿心血管疾病的临床诊治及研究，包括心肌炎，心肌病，先天性心脏病，各类早搏传导阻滞等心率失常，晕厥等。其中对川崎病的流行病学，发病机制及管状动脉合并症的诊治研究居世界前沿水平，尤其对川崎病有着丰富的经验。</p>
+<!--        这里是信息占位-->
     </div>
 
     <div class="evaluate">
@@ -115,10 +89,54 @@
     <!--    end-->
 </div>
 
+<!--这里是信息栏-->
+<script type="text/html" id="doctor_detail">
+    <img src="{{doctor_pic}}" alt="医生头像">
+    <div class="name_main">
+        <h5>{{doctor_name}}</h5>
+        <span>{{doctor_sketch}}</span>
+        <ul>
+            <li>
+                <a href="javascript:;" style="background-color: #FFEEED;">
+                    <img src="../../../uploads/dianhua.png" alt="电话">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" style="background-color: #F4F5F8;">
+                    <img src="../../../uploads/shiping.png" alt="视频">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" style="background-color: #FFFCE9;">
+                    <img src="../../../uploads/weizhi.png" alt="位置">
+                </a>
+            </li>
+        </ul>
+    </div>
+</script>
+
+<!--这里是详细信息-->
+<script type="text/html" id="doctor_message">
+    <div class="online_top">
+        <h3>擅长及诊所介绍</h3>
+        <a href="javascript:;" class="onLine_more">
+            更多
+            <span class="glyphicon glyphicon-chevron-right" style="color: #95a0b8"></span>
+        </a>
+    </div>
+    <p>{{doctor_detail}}</p>
+</script>
+
+<!--引入layui-->
+<script src="../../../lib/layui/layui.all.js"></script>
 <!--引入jquery-->
 <script src="../../../lib/js/jQuery.js"></script>
 <!--引入flexible 实现 rem 自动-->
 <script src="../../../lib/js/flexible.js"></script>
+<!--引入template-->
+<script src="../../../lib/js/template-web.js"></script>
+<!--引入配置-->
+<script src="../../../js/base.js"></script>
 <!--引入本页js-->
 <script src="../../../js/paging/home/inquiry/doctorRef.js"></script>
 </body>

@@ -1,10 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    引入bootstarp样式-->
+    <link rel="stylesheet" href="../../../lib/css/bootstrap.css">
+    <!--    引入layui-->
+    <link rel="stylesheet" href="../../../lib/layui/css/layui.css">
+    <!--    引入公共样式-->
+    <link rel="stylesheet" href="../../../css/common.css">
+    <!--    引入本页样式-->
+    <link rel="stylesheet" href="../../../css/paging/home/inquiry/office.css">
+    <title>寻医</title>
 </head>
 <body>
-$END$
+<div class="container-fluid">
+    <!--    头部标题-->
+    <div class="title">
+        <span class="glyphicon glyphicon-chevron-left arrows"></span>
+        <a href="office.html">皮肤科</a>
+    </div>
+    <!--    end-->
+    <div class="family_main">
+        <ul class="office_main">
+            <!--            医生列表占地-->
+        </ul>
+    </div>
+
+    <!--    foot-->
+    <div class="foot">
+        这里是占位
+    </div>
+    <!--    end-->
+</div>
+
+<script type="text/html" id="doctor_list">
+    {{each}}
+    <li>
+        <div class="family_left">
+            <div class="doctor">
+                <a href="doctorRef.html?famous={{$value.iddc_doctor}}&copy={{$value.copy}}" class="doctor_name">{{$value.doctor_name}}</a>
+                <a href="javascript:;" class="doctor_ico" style="background-color: #ffdfdd">
+                    <img src="../../../uploads/dianhua.png" alt="电话">
+                </a>
+                <a href="javascript:;" class="doctor_ico" style="background-color: #f4e6e8">
+                    <img src="../../../uploads/shiping.png" alt="视屏">
+                </a>
+                <a href="javascript:;" class="doctor_ico" style="background-color: #ffedd9">
+                    <img src="../../../uploads/weizhi.png" alt="位置">
+                </a>
+            </div>
+            <span>{{$value.doctor_sketch}} &nbsp;&nbsp;&nbsp; 好评率:{{$value.evaluate_sketch  | evaluate}}</span>
+        </div>
+        <a href="doctorRef.html?famous={{$value.iddc_doctor}}">
+            <img src="{{$value.doctor_pic | pic}}" alt="医生头像" class="family_right">
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--引入jquery-->
+<script src="../../../lib/js/jQuery.js"></script>
+<!--引入flexible 实现 rem 自动-->
+<script src="../../../lib/js/flexible.js"></script>
+<!--引入layui-->
+<script src="../../../lib/layui/layui.all.js"></script>
+<!--引入template-->
+<script src="../../../lib/js/template-web.js"></script>
+<!--引入配置文件-->
+<script src="../../../js/base.js"></script>
+<!--引入本页js-->
+<script src="../../../js/paging/home/inquiry/office.js"></script>
 </body>
 </html>

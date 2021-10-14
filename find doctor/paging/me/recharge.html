@@ -1,10 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    引入bootstarp样式-->
+    <link rel="stylesheet" href="../../lib/css/bootstrap.css">
+    <!--    引入layui-->
+    <link rel="stylesheet" href="../../lib/layui/css/layui.css">
+    <!--    引入公共样式-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--    引入本页样式-->
+    <link rel="stylesheet" href="../../css/paging/me/recharge.css">
+    <title>寻医</title>
 </head>
 <body>
-$END$
+<div class="container-fluid">
+    <!--    头部标题-->
+    <div class="title">
+        <span class="glyphicon glyphicon-chevron-left arrows"></span>
+        <a href="userInfo.html">账户充值</a>
+    </div>
+    <!--    end-->
+
+    <!--    账户名称-->
+    <div class="username">
+        <h4>账户名称：</h4>
+        <i>666666</i>
+    </div>
+
+    <div class="username">
+        <h4>金额：</h4>
+    </div>
+
+    <ul class="recharge_main">
+        <li class="recharge_block">
+            <a href="javascript:;" class="money money_on">
+                <h5>50金币</h5>
+                <span>售价：50.0元</span>
+                <i>50</i>
+            </a>
+        </li>
+        <li class="recharge_block">
+            <a href="javascript:;" class="money">
+                <h5>100金币</h5>
+                <span>售价：100.0元</span>
+                <i>100</i>
+            </a>
+        </li>
+        <li class="recharge_block">
+            <a href="javascript:;" class="money">
+                <h5>200金币</h5>
+                <span>售价：200.0元</span>
+                <i>200</i>
+            </a>
+        </li>
+        <li class="recharge_block">
+            <a href="javascript:;" class="money">
+                <h5>300金币</h5>
+                <span>售价：300.0元</span>
+                <i>300</i>
+            </a>
+        </li>
+        <li class="recharge_block">
+            <a href="javascript:;" class="money">
+                <h5>500金币</h5>
+                <span>售价：500.0元</span>
+                <i>500</i>
+            </a>
+        </li>
+    </ul>
+
+    <button type="submit" class="putin">确认充值</button>
+
+    <!--    说明-->
+    <div class="money_explain">
+        <h6>说明：</h6>
+        <p>
+            1. 储值账户充值金额由金融街开发票，用储值账户消费商家将不再单独开发票。<br/>
+            2. 储值账户余额退款时，会扣除开发票所扣税额。
+        </p>
+    </div>
+</div>
+
+<!--引入layui-->
+<script src="../../lib/layui/layui.all.js"></script>
+<!--引入jquery-->
+<script src="../../lib/js/jQuery.js"></script>
+<!--引入flexible 实现 rem 自动-->
+<script src="../../lib/js/flexible.js"></script>
+<!--引入配置文件-->
+<script src="../../js/base.js"></script>
+<!--引入本页js-->
+<script src="../../js/paging/me/recharge.js"></script>
 </body>
 </html>

@@ -29,6 +29,7 @@ body {
 .message_left {
     width: 3.973rem;
     display: flex;
+    /*flex-wrap: wrap;*/
 }
 
 .message_left img {
@@ -47,6 +48,11 @@ body {
 .user,
 .user a {
     font-size: 0.4rem;
+}
+
+.user span {
+    display: block;
+    width: 100%;
 }
 
 .message_right {
@@ -109,6 +115,7 @@ body {
 }
 
 .account i {
+    font-size: 0.427rem;
     display: block;
     width: 100%;
     text-align: center;
@@ -211,6 +218,49 @@ body {
     text-align: center;
     font-size: 0.373rem;
     color: #707070;
+}
+
+.order_block {
+    margin-top: 0.4rem;
+    padding: 0.267rem 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /*height: 2.4rem;*/
+    background-color: #003cbf;
+    border-radius: 0.267rem;
+    color: white;
+}
+
+.order_name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order_name h3 {
+    font-size: 0.48rem;
+}
+
+.order_name span {
+    font-size: 0.373rem;
+}
+
+.order_btn {
+    margin-top: 0.533rem;
+}
+
+.order_btn button {
+    display: block;
+    width: 3.2rem;
+    height: 1.067rem;
+    background-color: #f4f5f8;
+    color: black;
+    border: none;
+    font-size: 0.533rem;
+    border-radius: 0.133rem;
 }
 
 .foot {

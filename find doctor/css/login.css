@@ -101,6 +101,7 @@ body {
 }
 
 .callUs a {
+    font-size: 0.373rem;
     color: white;
 }
 
@@ -153,6 +154,7 @@ body {
     width: 100%;
     height: 1.227rem;
     color: white;
+    font-size: 0.64rem !important;
     font-weight: 700;
     border: none;
     border-radius: 0.613rem;

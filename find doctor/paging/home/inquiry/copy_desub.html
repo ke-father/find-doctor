@@ -1,10 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    引入bootstarp样式-->
+    <link rel="stylesheet" href="../../../lib/css/bootstrap.css">
+    <!--    引入layui-->
+    <link rel="stylesheet" href="../../../lib/layui/css/layui.css">
+    <!--    引入公共样式-->
+    <link rel="stylesheet" href="../../../css/common.css">
+    <!--    引入本页样式-->
+    <link rel="stylesheet" href="../../../css/paging/home/inquiry/desub.css">
+    <title>寻医</title>
 </head>
 <body>
-$END$
+<div class="bgdColor"></div>
+
+<div class="container-fluid main">
+    <!--    顶部-->
+    <div class="famous_top">
+        <h1><a href="departmentList.html" class="glyphicon glyphicon-chevron-left href"></a>科室列表</h1>
+        <div class="top_search">
+            <input type="search" placeholder="搜索科室 医生 病症">
+            <span class="search_glass">
+                <i class="glyphicon glyphicon-search"></i>
+            </span>
+        </div>
+    </div>
+
+    <div class="department_main">
+        <ul class="department">
+            <!--           列表占位-->
+        </ul>
+    </div>
+
+    <!--    foot-->
+    <div class="foot">
+        这里是占位
+    </div>
+    <!--    end-->
+</div>
+
+<!--科室列表-->
+<script type="text/html" id="department_list">
+    {{each}}
+    <li>
+        <a href="copy_office.html?copy={{$value.iddc_desub}}" class="block">
+            <div class="left">
+                <h3>{{$value.desub_name}}</h3>
+                <i>服务人数:{{$value.serve_number}} &nbsp;&nbsp;&nbsp; 好评率:{{$value.serve_evaluate | evaluate}}</i>
+            </div>
+            <span>
+                <img src="{{$value.department_pic | pic}}" alt="科室图标">
+            </span>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--引入layui-->
+<script src="../../../lib/layui/layui.all.js"></script>
+<!--引入jquery-->
+<script src="../../../lib/js/jQuery.js"></script>
+<!--引入flexible 实现 rem 自动-->
+<script src="../../../lib/js/flexible.js"></script>
+<!--引入template-->
+<script src="../../../lib/js/template-web.js"></script>
+<!--引入配置项-->
+<script src="../../../js/base.js"></script>
+<!--引入本页js-->
+<script src="../../../js/paging/home/inquiry/desub.js"></script>
 </body>
 </html>

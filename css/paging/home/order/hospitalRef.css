@@ -1,0 +1,198 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.bgdColor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.96rem;
+    background-color: #e8e8e8;
+}
+
+.arrow {
+    margin-top: 0.267rem;
+    display: block;
+    width: 100%;
+    color: #2b2b2b;
+    font-size: 0.4rem;
+}
+
+.hospital_name {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.267rem 0.4rem;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7.653rem;
+    height: 3.333rem;
+    background-color: white;
+    border: 0.027rem solid #707070;
+}
+
+.hospital_name h1 {
+    display: inline-block;
+    font-size: 0.4rem;
+    margin: 0;
+}
+
+.hospital_tag {
+    display: inline-block;
+    padding: 0.027rem 0.133rem;
+    margin: 0.107rem;
+    font-size: 0.267rem;
+    background-color: #e0e0e0;
+}
+
+.way,
+.deg {
+    margin-top: 0.4rem;
+}
+
+.way_top,
+.deg_top {
+    font-size: 0.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.way_main {
+    margin-top: 0.267rem;
+    padding-left: 0.4rem;
+    font-size: 0.293rem;
+}
+
+.way_main li {
+    list-style: decimal !important;
+}
+
+.deg_main {
+    margin-top: 0.267rem;
+    font-size: 0.293rem;
+}
+
+.deg_print {
+    padding: 0.08rem 0.213rem;
+    display: block;
+    width: 100%;
+    height: 1.067rem;
+    color: black;
+    font-size: 0.267rem;
+    background-color: #e8e5e5;
+}
+
+.onLine {
+    margin-top: 0.4rem;
+}
+
+.online_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.online_top h3 {
+    margin: 0;
+    font-size: 0.4rem;
+    font-weight: 700;
+}
+
+.onLine_more {
+    color: black;
+    font-size: 0.293rem;
+}
+
+.onLine_echo a {
+    width: 100%;
+    height: 2.667rem;
+    border-bottom: 0.027rem solid #707070;
+    display: flex;
+    align-items: center;
+}
+
+.onLine_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.333rem;
+    height: 100%;
+}
+
+.onLine_left img {
+    width: 1.333rem;
+    height: 1.333rem;
+}
+
+.onLine_right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 0.4rem;
+}
+
+.onLine_right h5 {
+    position: absolute;
+    top: 0.427rem;
+    left: 0.4rem;
+    margin: 0;
+    font-size: 0.373rem;
+    color: black;
+}
+
+.onLine_right h5 i {
+    margin-left: 0.8rem;
+    font-size: 0.293rem;
+    color: black;
+}
+
+.onLine_right span {
+    position: absolute;
+    top: 0.853rem;
+    left: 0.4rem;
+    font-size: 0.293rem;
+    color: black;
+}
+
+.onLine_right p {
+    padding-right: 0.133rem;
+    position: absolute;
+    top: 1.44rem;
+    left: 0.4rem;
+    display: block;
+    /*width: 5.6rem;*/
+    font-size: 0.293rem;
+    color: #8c8c8c;
+}
+
+.onLine_echo:last-child a {
+    border: none !important;
+}
+
+.hospital_intro {
+    font-size: 0.293rem;
+}
+
+.hospital_intro p {
+    margin: 0.4rem 0 0;
+}
+
+.foot {
+    margin-top: 0.267rem;
+    width: 100%;
+    height: 2.347rem;
+    color: #ffffff;
+}

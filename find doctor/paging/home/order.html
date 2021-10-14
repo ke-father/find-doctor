@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--    引入bootstarp样式-->
     <link rel="stylesheet" href="../../lib/css/bootstrap.css">
+<!--    引入layui-->
+    <link rel="stylesheet" href="../../lib/layui/css/layui.css">
     <!--    引入公共样式-->
     <link rel="stylesheet" href="../../css/common.css">
     <!--    引入本页样式-->
@@ -26,26 +28,29 @@
         <input type="search" placeholder="搜索医院 地区">
     </div>
 
-    <div class="order">
+    <div class="order layui-form">
         <h3>挂号</h3>
         <form class="orderForm">
             <div class="order_block">
                 <h5>就诊地区：</h5>
-                <input type="text">
-            </div>
-            <div class="order_block">
-                <h5>性别：</h5>
-                <input type="text">
-            </div>
-            <div class="order_block">
-                <h5>出生日期：</h5>
-                <input type="text">
+                <input type="text" name="user_place" id="user_place" lay-verify="required">
             </div>
             <div class="order_block">
                 <h5>找医院：</h5>
-                <input type="text" name="hospital">
+                <input type="text" name="order_hospital" lay-verify="required">
             </div>
-            <input type="submit" value="确认预约">
+            <div class="order_block">
+                <h5>性别：</h5>
+                <select name="sex" name="sex" lay-verify="required">
+                    <option>男</option>
+                    <option>女</option>
+                </select>
+            </div>
+            <div class="order_block">
+                <h5>出生日期：</h5>
+                <input type="text" name="date" lay-verify="required|date" class="layui-input" id="date">
+            </div>
+            <input type="submit" value="确认预约" lay-submit lay-filter="*">
         </form>
     </div>
 
@@ -53,13 +58,13 @@
         <h3>我的预约</h3>
         <div class="me_main">
             <div class="col-xs-4 col-md-4">
-                <a href="javascript:;">全部</a>
+                <a href="order/orderHospital.html">全部</a>
             </div>
             <div class="col-xs-4 col-md-4">
-                <a href="javascript:;">进行中</a>
+                <a href="order/orderHospital.html">进行中</a>
             </div>
             <div class="col-xs-4 col-md-4">
-                <a href="javascript:;">已结算</a>
+                <a href="order/orderHospital.html">已结算</a>
             </div>
         </div>
     </div>
@@ -68,23 +73,37 @@
         <h3>医院选择</h3>
         <div class="me_main">
             <div class="col-xs-4 col-md-4">
-                <a href="javascript:;">推荐意愿</a>
+                <a href="order/findHospital.html">推荐意愿</a>
             </div>
             <div class="col-xs-4 col-md-4">
-                <a href="javascript:;">附近医院</a>
+                <a href="order/findHospital.html">附近医院</a>
             </div>
             <div class="col-xs-4 col-md-4">
-                <a href="javascript:;">海外医院</a>
+                <a href="order/findHospital.html">海外医院</a>
             </div>
         </div>
     </div>
 </div>
 
+<!--引入layui-->
+<script src="../../lib/layui/layui.all.js"></script>
 <!--引入jquery-->
 <script src="../../lib/js/jQuery.js"></script>
 <!--引入flexible 实现 rem 自动-->
 <script src="../../lib/js/flexible.js"></script>
+<!--引入配置     本页引入百度地图api  不使用配置项-->
+<!--<script src="../../js/base.js"></script>-->
 <!--引入本页js-->
 <script src="../../js/paging/home/order.js"></script>
+<script>
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#date' //指定元素
+        });
+    });
+</script>
 </body>
 </html>

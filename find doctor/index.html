@@ -6,8 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>寻医</title>
+    <!--    引入layui-->
+    <link rel="stylesheet" href="lib/layui/css/layui.css">
     <!--    引入bootstarp样式-->
     <link rel="stylesheet" href="lib/css/bootstrap.css">
+<!--    引入swiper-->
+    <link rel="stylesheet" href="lib/css/swiper-bundle.min.css">
     <!--    引入公共样式-->
     <link rel="stylesheet" href="css/common.css">
     <!--    引入本页样式-->
@@ -15,6 +19,27 @@
 </head>
 <body>
 <div class="container-fluid">
+
+<!--    过渡页-->
+    <div class="swiper-container lead">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="uploads/Group%20146@2x.png" class="lead_pic1" alt="过渡页">
+                <div class="leadNow"></div>
+            </div>
+            <div class="swiper-slide">
+                <img src="uploads/Group%2045@2x.png" class="lead_pic2" alt="过渡页">
+                <div class="leadNow"></div>
+            </div>
+            <div class="swiper-slide lead_page">
+                <img src="uploads/Group%2082@2x.png" class="lead_pic3" alt="过渡页">
+                <div class="leadNow"></div>
+                <button type="submit" class="lead_btn">立即体验</button>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination dot"></div>
+    </div>
 
     <!--    中间的ifream通栏-->
     <iframe src="paging/home.html" name="main" frameborder="0">
@@ -59,7 +84,24 @@
     <!--    end-->
 </div>
 
+<!--引入layui-->
+<script src="lib/layui/layui.all.js"></script>
+<!--引入jquery-->
+<script src="lib/js/jQuery.js"></script>
+<!--引入swiper-->
+<script src="lib/js/swiper-bundle.min.js"></script>
 <!--引入flexible 实现 rem 自动-->
 <script src="lib/js/flexible.js"></script>
+<!--引入配置-->
+<script src="js/base.js"></script>
+<!--引入首页-->
+<script src="js/index.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
 </body>
 </html>

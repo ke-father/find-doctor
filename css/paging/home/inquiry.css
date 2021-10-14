@@ -1,0 +1,137 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.227rem;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.48rem;
+    color: #bfbfbf;
+}
+
+.title a {
+    display: inline-block;
+    font-size: 0.48rem;
+    color: #707070;
+}
+
+.refer {
+    padding: 0 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.refer h3 {
+    margin: 0;
+    font-size: 0.4rem;
+    font-weight: 700;
+}
+
+.refer_main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.refer_main li {
+    margin-top: 0.4rem;
+    flex: 50%;
+}
+
+.refer_print {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.refer_print i {
+    margin-top: 0.267rem;
+    width: 100%;
+    color: black;
+    font-size: 0.293rem;
+    text-align: center;
+}
+
+.hot {
+    margin-top: 0.667rem;
+    padding: 0 0.4rem;
+    width: 100%;
+}
+
+.hot h3 {
+    margin: 0;
+    font-size: 0.4rem;
+    font-weight: 700;
+}
+
+.hot_main li {
+    display: flex;
+    align-items: center;
+    padding: 0 0.4rem;
+    width: 100%;
+    height: 3.307rem;
+    border-bottom: 0.027rem solid black;
+}
+
+.hot_echo {
+    padding: 0.853rem 0 0.533rem 0.213rem;
+    height: 100%;
+    font-size: 0.293rem;
+}
+
+.hot_echo a {
+    font-size: 0.293rem;
+    color: black;
+}
+
+.hot_echo > span {
+    margin-top: 0.133rem;
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+}
+
+.hot_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.267rem;
+}
+
+.hot_title a {
+    font-size: 0.373rem;
+    color: black;
+}
+
+.hot_title span {
+    margin-left: 0.533rem;
+    font-size: 0.373rem;
+}
+
+.foot {
+    margin-top: 0;
+    width: 100%;
+    height: 2.347rem;
+    color: white;
+}

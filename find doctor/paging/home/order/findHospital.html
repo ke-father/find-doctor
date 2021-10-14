@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--    引入bootstarp样式-->
     <link rel="stylesheet" href="../../../lib/css/bootstrap.css">
+<!--    引入layui-->
+    <link rel="stylesheet" href="../../../lib/layui/css/layui.css">
     <!--    引入公共样式-->
     <link rel="stylesheet" href="../../../css/common.css">
     <!--    引入本页样式-->
@@ -23,138 +25,7 @@
     <!--    end-->
     
     <ul class="find">
-        <li class="top_search">
-            <input type="search" placeholder="搜索">
-        </li>
-        <li class="classify">
-            <a href="javascript:;">
-                全国
-            </a>
-            <div class="line"></div>
-            <a href="javascript:;">
-                综合
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="javascript:;">
-                <span class="findLeft">
-                    <i>01</i>
-                </span>
-                <div class="findRight">
-                    <h4>北京协和医院</h4>
-                    <i class="ranking">全国排名第1</i>
-                    <i class="find_wen">北京市东城区</i>
-                </div>
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="javascript:;">
-                <span class="findLeft">
-                    <i>02</i>
-                </span>
-                <div class="findRight">
-                    <h4>四川大学华西医院</h4>
-                    <i class="ranking">全国排名第2</i>
-                    <i class="find_wen">四川省成都市</i>
-                </div>
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="hospitalRef.html">
-                <span class="findLeft">
-                    <i>03</i>
-                </span>
-                <div class="findRight">
-                    <h4>解放军总医院（301）医院</h4>
-                    <i class="ranking">全国排名第3</i>
-                    <i class="find_wen">北京市海淀区</i>
-                </div>
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="javascript:;">
-                <span class="findLeft">
-                    <i>04</i>
-                </span>
-                <div class="findRight">
-                    <h4>上海瑞金医院</h4>
-                    <i class="ranking">全国排名第4</i>
-                    <i class="find_wen">上海嘉定区</i>
-                </div>
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="javascript:;">
-                <span class="findLeft">
-                    <i>05</i>
-                </span>
-                <div class="findRight">
-                    <h4>空军军医大学西京医院</h4>
-                    <i class="ranking">全国排名第5</i>
-                    <i class="find_wen">陕西省西安市</i>
-                </div>
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="javascript:;">
-                <span class="findLeft">
-                    <i>06</i>
-                </span>
-                <div class="findRight">
-                    <h4>复旦大学附属中山医院</h4>
-                    <i class="ranking">全国排名第6</i>
-                    <i class="find_wen">上海市徐汇区</i>
-                </div>
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="javascript:;">
-                <span class="findLeft">
-                    <i>07</i>
-                </span>
-                <div class="findRight">
-                    <h4>中山大学附属第一医院</h4>
-                    <i class="ranking">全国排名第7</i>
-                    <i class="find_wen">广东省广州市</i>
-                </div>
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="javascript:;">
-                <span class="findLeft">
-                    <i>08</i>
-                </span>
-                <div class="findRight">
-                    <h4>华中科技大学附属同济医院</h4>
-                    <i class="ranking">全国排名第8</i>
-                    <i class="find_wen">湖北省武汉市</i>
-                </div>
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="javascript:;">
-                <span class="findLeft">
-                    <i>09</i>
-                </span>
-                <div class="findRight">
-                    <h4>复旦大学附属华山医院</h4>
-                    <i class="ranking">全国排名第9</i>
-                    <i class="find_wen">上海市静安区</i>
-                </div>
-            </a>
-        </li>
-        <li class="find_block">
-            <a href="javascript:;">
-                <span class="findLeft">
-                    <i>10</i>
-                </span>
-                <div class="findRight">
-                    <h4>北京大学第一医院</h4>
-                    <i class="ranking">全国排名第10</i>
-                    <i class="find_wen">北京市老皇城区</i>
-                </div>
-            </a>
-        </li>
+<!--        医院列表-->
     </ul>
 
     <div class="foot">
@@ -162,10 +33,45 @@
     </div>
 </div>
 
+<!--医院列表区域-->
+<script type="text/html" id="hospital_list">
+    <li class="top_search">
+        <input type="search" placeholder="搜索">
+    </li>
+    <li class="classify">
+        <a href="javascript:;">
+            全国
+        </a>
+        <div class="line"></div>
+        <a href="javascript:;">
+            综合
+        </a>
+    </li>
+    {{each data}}
+    <li class="find_block">
+        <a href="hospitalRef.html?id={{$value.iddc_hospital}}">
+                <span class="findLeft">
+                    <i>{{$value.iddc_hospital}}</i>
+                </span>
+            <div class="findRight">
+                <h4>{{$value.hospital_name}}</h4>
+                <i class="ranking">{{$value.hospital_ranking}}</i>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--引入layui-->
+<script src="../../../lib/layui/layui.all.js"></script>
 <!--引入jquery-->
 <script src="../../../lib/js/jQuery.js"></script>
 <!--引入flexible 实现 rem 自动-->
 <script src="../../../lib/js/flexible.js"></script>
+<!--引入template-->
+<script src="../../../lib/js/template-web.js"></script>
+<!--引入配置文件-->
+<script src="../../../js/base.js"></script>
 <!--引入本页js-->
 <script src="../../../js/paging/home/order/findHospital.js"></script>
 </body>

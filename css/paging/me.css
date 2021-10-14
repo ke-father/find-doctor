@@ -1,0 +1,221 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.me_message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.4rem;
+    width: 100%;
+    height: 1.6rem;
+}
+
+.me_message a {
+    color: black;
+}
+
+.message_left {
+    width: 3.973rem;
+    display: flex;
+}
+
+.message_left img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.user {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.267rem;
+    padding: 0.16rem 0;
+
+}
+
+.user,
+.user a {
+    font-size: 0.4rem;
+}
+
+.message_right {
+    display: inline-block;
+    width: 1.92rem;
+    height: 0.907rem;
+    font-size: 0.48rem;
+    line-height: 0.907rem;
+    text-align: center;
+    border: 0.027rem solid black;
+    border-radius: 0.587rem;
+}
+
+.vip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 0.987rem;
+    margin-top: 0.4rem;
+    border: 0.027rem solid black;
+    border-radius: 0.587rem;
+    padding-left: 0.4rem;
+}
+
+.vip a {
+    font-size: 0.4rem;
+    color: #707070;
+}
+
+.vip a:nth-child(2) {
+    display: inline-block;
+    height: 0.56rem;
+    line-height: 0.587rem;
+    margin-left: 0.267rem;
+    font-size: 0.32rem;
+}
+
+.vip a:nth-child(3) {
+    position: absolute;
+    top: 0.16rem;
+    right: 0.533rem;
+}
+
+.account {
+    margin-top: 0.4rem;
+    width: 100%;
+    height: 2.587rem;
+    border: 0.027rem solid black;
+    border-radius: 0.587rem;
+}
+
+.account div {
+    padding: 0.64rem 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.account i {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.account a {
+    font-size: 0.293rem;
+    color: black;
+}
+
+.order {
+    margin-top: 0.4rem;
+    padding: 0.267rem;
+    width: 100%;
+    height: 4.213rem;
+    border: 0.027rem solid black;
+    border-radius: 0.587rem;
+}
+
+.order_top {
+    padding: 0 0.133rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_top h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.4rem;
+}
+
+.order_top a {
+    font-size: 0.347rem;
+    color: #707070;
+}
+
+.order_main {
+    display: flex;
+    /*padding: 0.4rem 0;*/
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.orderDiv {
+    padding: 0.48rem 0 0;
+    flex: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.293rem;
+}
+
+.orderDiv img {
+    width: 1.333rem;
+    height: 1.333rem;
+}
+
+.orderDiv i {
+    margin-top: 0.4rem;
+    color: #707070;
+}
+
+.health {
+    padding: 0.4rem;
+    margin-top: 0.4rem;
+    width: 100%;
+    height: 4.64rem;
+    border: 0.027rem solid black;
+    border-radius: 0.587rem;
+}
+
+.health h3 {
+    margin: 0;
+    font-size: 0.4rem;
+}
+
+.health_main {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.health_main a {
+    width: 3.467rem;
+    height: 0.907rem;
+    color: black;
+    font-size: 0.4rem;
+    line-height: 0.907rem;
+    text-align: center;
+    border-radius: 0.587rem;
+    background-color: #e8e8e8;
+}
+
+.health_main i {
+    margin-top: 0.4rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.373rem;
+    color: #707070;
+}
+
+.foot {
+    margin-top: 0;
+    width: 100%;
+    height: 2.347rem;
+    color: white;
+}

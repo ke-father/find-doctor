@@ -1,0 +1,142 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+}
+
+.main {
+    background-color: white;
+    margin: 0.278rem 0.417rem 0;
+    padding: 0.139rem 0.278rem;
+    border-radius: 0.333rem;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.227rem;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.48rem;
+    color: #bfbfbf;
+}
+
+.title a {
+    display: inline-block;
+    font-size: 0.48rem;
+    color: #707070;
+}
+
+.search_box {
+    width: 100%;
+    height: 0.853rem;
+}
+
+.search_box input {
+    width: 100%;
+    height: 0.853rem;
+    font-size: 0.293rem;
+    text-align: center;
+    border: 0.027rem solid #707070;
+    border-radius: 0.267rem;
+}
+
+.order {
+    margin-top: 0.667rem;
+}
+
+.order h3 {
+    color: black;
+    font-size: 0.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.orderForm {
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+    width: 100%;
+    height: 6.8rem;
+    border: 0.027rem solid #707070;
+    border-radius: 0.267rem;
+}
+
+.order_block {
+    margin-bottom: 0.4rem;
+    position: relative;
+    width: 100%;
+    height: 0.853rem;
+}
+
+.order_block h5 {
+    font-size: 0.293rem;
+    margin: 0;
+}
+
+.order_block input {
+    padding: 0 0.4rem;
+    position: absolute;
+    top: 0.32rem;
+    left: 0;
+    width: 100%;
+    height: 0.533rem;
+    font-size: 0.293rem;
+    text-align: center;
+    border-bottom: 0.027rem solid #707070;
+}
+
+.orderForm > input {
+    width: 100%;
+    height: 0.853rem;
+    font-size: 0.427rem;
+    border-radius: 0.427rem;
+}
+
+.me_order {
+    margin-top: 0.667rem;
+}
+
+.hospital_order {
+    margin-top: 1.12rem;
+}
+
+.me_order h3,
+.hospital_order h3 {
+    margin: 0;
+    font-size: 0.4rem;
+    font-weight: 700;
+}
+
+.me_main {
+    margin-top: 0.4rem;
+    height: 1.547rem;
+}
+
+.me_main > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.me_main a {
+    display: block;
+    width: 2.213rem;
+    height: 1.547rem;
+    color: black;
+    font-size: 0.293rem;
+    line-height: 1.547rem;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 0.267rem;
+    background-color: #cecece;
+}

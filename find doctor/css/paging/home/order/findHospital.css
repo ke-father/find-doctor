@@ -128,7 +128,8 @@ body {
 .findRight h4 {
     color: black;
     font-size: 0.4rem;
-    white-space: nowrap;
+    white-space: normal;
+    word-break: break-all;
     margin: 0;
 }
 
@@ -139,14 +140,14 @@ body {
 
 .ranking {
     position: absolute;
-    bottom: 0.213rem;
-    left: 0;
+    bottom: 0.133rem;
+    right: 0.267rem;
 }
 
 .find_wen {
     position: absolute;
-    top: 0.213rem;
-    right: 0.4rem;
+    top: 0.96rem;
+    right: 0;
 }
 
 .foot {

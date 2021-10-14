@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--    引入bootstarp样式-->
     <link rel="stylesheet" href="../lib/css/bootstrap.css">
+    <!--    引入layui-->
+    <link rel="stylesheet" href="../lib/layui/css/layui.css">
     <!--    引入公共样式-->
     <link rel="stylesheet" href="../css/common.css">
     <!--    引入本页样式-->
@@ -18,39 +20,20 @@
     <!--    me-->
     <div class="me_message">
         <div class="message_left">
-            <img src="../uploads/user_pic.png" alt="用户头像">
-            <div class="user">
-                <a href="javascript:;">柯爸爸</a>
-                <span>
-                ID:<a href="javascript:;">100001</a>
-            </span>
-            </div>
+            <!--            用户信息-->
         </div>
-        <a href="javascript:;" class="message_right">
+        <a href="me/userInfo.html" class="message_right">
             更改
         </a>
     </div>
     <!--    end-->
 
     <div class="vip">
-        <a href="javascript:;">vip</a>
-        <a href="javascript:;">黄金会员</a>
-        <a href="javascript:;">充值</a>
+        <!--        vip 会员-->
     </div>
 
     <div class="account">
-        <div class="col-xs-4 col-md-4">
-            <i>0</i>
-            <a href="javascript:;">账户余额</a>
-        </div>
-        <div class="col-xs-4 col-md-4">
-            <i>0</i>
-            <a href="javascript:;">优惠券</a>
-        </div>
-        <div class="col-xs-4 col-md-4">
-            <i>100</i>
-            <a href="javascript:;">金币</a>
-        </div>
+        <!--        用户喜欢 收藏 金币-->
     </div>
 
     <div class="order">
@@ -62,35 +45,31 @@
             </a>
         </div>
         <div class="order_main">
-            <div class="orderDiv">
+            <a class="orderDiv">
                 <img src="../uploads/model.png" alt="购物车">
                 <i>购物车</i>
-            </div>
-            <div class="orderDiv">
+            </a>
+            <a class="orderDiv">
                 <img src="../uploads/model.png" alt="待付款">
                 <i>待付款</i>
-            </div>
-            <div class="orderDiv">
+            </a>
+            <a class="orderDiv">
                 <img src="../uploads/model.png" alt="待收货">
                 <i>待收货</i>
-            </div>
-            <div class="orderDiv">
+            </a>
+            <a class="orderDiv">
                 <img src="../uploads/model.png" alt="待评价">
                 <i>待评价</i>
-            </div>
-            <div class="orderDiv">
+            </a>
+            <a class="orderDiv">
                 <img src="../uploads/model.png" alt="退款/售后">
                 <i>退款</i>
-            </div>
+            </a>
         </div>
     </div>
 
     <div class="health">
-        <h3>我的订单</h3>
-        <div class="health_main">
-            <a href="javascript:;">新建档案</a>
-            <i>请添加档案，进行档案管理</i>
-        </div>
+<!--        预约占位-->
     </div>
 
     <div class="foot">
@@ -98,10 +77,77 @@
     </div>
 </div>
 
+<!--用户信息输出-->
+<script type="text/html" class="layui-nav-img" id="userInfo">
+    {{if data.user_pic}}
+    <img src="{{data.user_pic}}" id="user_pic" alt="用户头像">
+    {{else}}
+    <img src="../uploads/user_pic.png" alt="用户头像">
+    {{/if}}
+    <div class="user">
+        <a href="./me/userInfo.html">{{data.nickname || data.account}}</a>
+        <span>
+            ID:<a href="./me/userInfo.html">{{data.iddc_user}}</a>
+        </span>
+    </div>
+</script>
+
+<!--vip信息输出-->
+<script type="text/html" id="vipInfo">
+    <a href="me/recharge.html">vip</a>
+    <a href="me/recharge.html">{{vipGrade}}</a>
+    <a href="me/recharge.html">充值</a>
+</script>
+
+<!--用户喜欢 收藏 金币-->
+<script type="text/html" id="userLove">
+    <div class="col-xs-4 col-md-4">
+        <i>{{data.user_love}}</i>
+        <a href="javascript:;">喜欢</a>
+    </div>
+    <div class="col-xs-4 col-md-4">
+        <i>{{data.user_collect}}</i>
+        <a href="javascript:;">收藏</a>
+    </div>
+    <div class="col-xs-4 col-md-4">
+        <i>{{data.user_gold}}</i>
+        <a href="./me/recharge.html">金币</a>
+    </div>
+</script>
+
+<!--预约-->
+<script type="text/html" id="order_date">
+    <h3>我的订单</h3>
+    <!--            预约-->
+    <div class="order_block">
+        <div class="order_name">
+            <h3></h3>
+            <span>{{order_date}}</span>
+        </div>
+        <div class="order_btn">
+            <button type="button" id="over_order" class="layui-btn layui-btn-xs layui-btn-danger">取消预约</button>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="new">
+    <h3>我的订单</h3>
+    <div class="health_main">
+        <a href="./home/order.html">新建档案</a>
+        <i>请添加档案，进行档案管理</i>
+    </div>
+</script>
+
+<!--引入layui js-->
+<script src="../lib/layui/layui.all.js"></script>
 <!--引入jquery-->
 <script src="../lib/js/jQuery.js"></script>
 <!--引入flexible 划分rem-->
 <script src="../lib/js/flexible.js"></script>
+<!--引入template js-->
+<script src="../lib/js/template-web.js"></script>
+<!--引入配置-->
+<script src="../js/base.js"></script>
 <!--引入本页 js-->
 <script src="../js/paging/me.js"></script>
 </body>

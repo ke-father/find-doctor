@@ -1,0 +1,152 @@
+body {
+    background-color: white;
+}
+
+.container-fluid {
+    padding: 0 0.4rem;
+}
+
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.227rem;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.48rem;
+    color: #bfbfbf;
+}
+
+.title a {
+    display: inline-block;
+    font-size: 0.48rem;
+    color: #707070;
+}
+
+.user_block {
+    margin-top: 0.533rem;
+    font-size: 0.48rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.user_block i {
+    margin-left: 0.267rem;
+}
+
+.user_block input {
+    margin-top: 0.267rem;
+    /*margin-left: 0.267rem;*/
+    width: 100%;
+    height: 1.067rem;
+    background-color: #f4f5f8;
+    text-align: center;
+    border-radius: 0.533rem;
+    box-shadow: 0rem 0.053rem 0.16rem -0.053rem;
+}
+
+/* 设置卡片主体区域的宽度 */
+.layui-card-body {
+    margin-top: 0.667rem;
+    padding-top: 0.933rem;
+    position: relative;
+    width: 100%;
+}
+
+/* 设置按钮行的样式 */
+.row2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.533rem;
+}
+
+/* 设置裁剪区域的样式 */
+.cropper-box {
+    width: 9.333rem;
+    height: 8.88rem;
+    background-color: cyan;
+    overflow: hidden;
+}
+
+/* 设置第一个预览区域的样式 */
+.w100 {
+    width: 2.667rem;
+    height: 2.667rem;
+    background-color: gray;
+}
+
+/* 设置第二个预览区域的样式 */
+.w50 {
+    width: 1.333rem;
+    height: 1.333rem;
+    background-color: gray;
+    margin-top: 1.333rem;
+}
+
+/* 设置预览区域下方文本的样式 */
+.size {
+    font-size: 0.32rem;
+    color: gray;
+    text-align: center;
+}
+
+/* 设置图片行的样式 */
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 设置 preview-box 区域的的样式 */
+.preview-box {
+    margin-top: 0.4rem;
+    padding: 0 0.8rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /*flex-direction: column;*/
+    flex: 1;
+    align-items: center;
+}
+
+/* 设置 img-preview 区域的样式 */
+.img-preview {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/*文件选取*/
+#avatar {
+    display: none;
+}
+
+.pic_name {
+    font-size: 0.48rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#put_btn {
+    margin-top: 1.067rem;
+    width: 100%;
+    height: 1.28rem;
+    border: none;
+    border-radius: 0.133rem;
+    background-color: #003cbf;
+}
+
+.foot {
+    margin-top: 0.533rem;
+    width: 100%;
+    height: 2.667rem;
+    color: white;
+}

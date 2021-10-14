@@ -22,6 +22,104 @@ iframe {
     /*height: 100%;*/
 }
 
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    /*background: #eee;*/
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 0.373rem;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 0.48rem;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.lead {
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.lead_pic1 {
+    width: 9.973rem;
+    height: 6.293rem;
+}
+
+.lead_pic2 {
+    width: 7.84rem;
+    height: 6.933rem;
+}
+
+.lead_pic3 {
+    width: 8.747rem;
+    height: 7.707rem;
+}
+
+.leadNow {
+    width: 8.72rem;
+    height: 1.28rem;
+}
+
+/*.lead img {*/
+/*    width: 100%;*/
+/*}*/
+
+.lead_page {
+    position: relative;
+}
+
+.lead_btn {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 8.72rem;
+    height: 1.28rem;
+    background-color: #003cbf;
+    font-size: 0.48rem;
+    color: white;
+    border-radius: 0.133rem;
+    border: none;
+}
+
+.dot {
+    position: absolute;
+    bottom: 10% !important;
+}
+
 /*底部导航栏*/
 .footer_nav {
     margin: 0;

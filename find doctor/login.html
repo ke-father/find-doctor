@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>寻医</title>
+    <!--    引入layui样式-->
+    <link rel="stylesheet" href="lib/layui/css/layui.css">
     <!--    引入公共样式-->
     <link rel="stylesheet" href="css/common.css">
     <!--    引入页面样式-->
@@ -21,54 +23,60 @@
     <div class="to">
         <div class="toLogin">登录</div>
         <div class="toReg">注册</div>
-        <span class="callUs"><a href="javascript:;">联系我们</a></span>    </div>
+        <span class="callUs"><a href="javascript:;">联系我们</a></span></div>
 
     <!--    登录界面-->
     <div class="login">
-        <form class="login_form" action="index.html">
+        <form class="login_form layui-form">
             <div class="printName">
-                <span class="printTop">填写手机号码</span>
-                <input type="text" name="userNumber" placeholder="请输入手机号码">
+                <span class="printTop">填写账户</span>
+                <input type="text" name="account" class="layui-input" required  lay-verify="required|account|number" placeholder="6-11位数字账户">
             </div>
             <div class="printName">
                 <span class="printTop">填写密码</span>
-                <input type="password" name="password" placeholder="请输入密码" class="login_input">
+                <input type="password" name="password" required lay-verify="required|pwd" placeholder="请确认密码" class="layui-input login_input">
             </div>
             <div class="print_tt">
                 <span><a href="javascript:;" id="go_reg">免费注册</a></span>
                 <span><a href="javascript:;">忘记密码</a></span>
             </div>
-            <input type="submit" value="登录" id="login_btn">
+            <button id="login_btn" class="layui-btn" lay-submit lay-filter="*">登陆</button>
         </form>
     </div>
     <!--    end-->
 
     <!--    注册界面-->
     <div class="reg">
-        <form class="reg_form" action="login.html">
+        <form class="reg_form layui-form">
             <div class="printName">
-                <span class="printTop">填写手机号码</span>
-                <input type="text" name="userNumber" placeholder="请输入手机号码">
+                <span class="printTop">设计账户</span>
+                <input type="text" name="account" class="layui-input" required  lay-verify="required|account|number" placeholder="6-12位数字账户">
             </div>
             <div class="printName">
                 <span class="printTop">确认密码</span>
-                <input type="password" name="repassword" placeholder="请确认密码" class="reg_input">
+                <input type="password" name="password" required lay-verify="required|pwd" placeholder="请确认密码" class="layui-input reg_input">
             </div>
             <div class="print_tt">
                 <span></span>
                 <span><a href="javascript:;" id="go_login">去登录</a></span>
             </div>
-            <input type="submit" value="注册" id="reg_btn">
+            <button id="reg_btn" class="layui-btn" lay-submit lay-filter="*">提交</button>
         </form>
     </div>
     <!--    end-->
 </div>
 
+<!--引入layuijs-->
+<script src="lib/layui/layui.all.js"></script>
 <!--引入jQuery-->
 <script src="lib/js/jQuery.js"></script>
 <!--引入flexible js-->
 <script src="lib/js/flexible.js"></script>
+<!--引入封装的 base.js-->
+<script src="js/base.js"></script>
 <!--引入本页js-->
-<script src="js/login.js"></script>
+<script src="js/loginStyle.js"></script>
+<!--引入注册/登陆 功能模块-->
+<script src="js/loginReg.js"></script>
 </body>
 </html>

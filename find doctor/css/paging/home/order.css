@@ -66,27 +66,29 @@ body {
     margin-top: 0.4rem;
     padding: 0.4rem;
     width: 100%;
-    height: 6.8rem;
+    height: 6.987rem;
     border: 0.027rem solid #707070;
     border-radius: 0.267rem;
 }
 
 .order_block {
-    margin-bottom: 0.4rem;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    margin: 0.267rem 0 0.4rem;
     position: relative;
     width: 100%;
     height: 0.853rem;
 }
 
 .order_block h5 {
+    /*margin: 0 0 0.133rem;*/
     font-size: 0.293rem;
-    margin: 0;
 }
 
-.order_block input {
+.order_block > input {
     padding: 0 0.4rem;
     position: absolute;
-    top: 0.32rem;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 0.533rem;
@@ -95,11 +97,41 @@ body {
     border-bottom: 0.027rem solid #707070;
 }
 
+.order_block input {
+    padding: 0 0.4rem;
+    width: 100%;
+    height: 0.533rem;
+    font-size: 0.293rem;
+    text-align: center;
+    border-bottom: 0.027rem solid #707070;
+}
+
+.order_block dl {
+    position: absolute;
+    top: 0.507rem;
+    left: 0;
+    font-size: 0.293rem;
+    text-align: center;
+}
+
+.order_block .layui-form-select {
+    margin-top: 0.133rem;
+}
+
+.order_block #date {
+    margin-top: 0.133rem;
+}
+
 .orderForm > input {
     width: 100%;
     height: 0.853rem;
     font-size: 0.427rem;
     border-radius: 0.427rem;
+}
+
+[type=submit] {
+    background-color: #003cbf;
+    color: white;
 }
 
 .me_order {

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>寻医</title>
+    <!--    引入bootstarp样式-->
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <!--    引入公共样式-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--    引入本页样式-->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container-fluid">
+
+    <!--    中间的ifream通栏-->
+    <iframe src="paging/home.html" name="main" frameborder="0">
+
+    </iframe>
+
+    <!--    底部导航栏-->
+    <div class="row footer_nav">
+        <div class="col-xs-3 col-md-3 footer_ico">
+            <a href="paging/home.html" target="main">
+                <span class="icon_lump">
+                    <img src="uploads/331@2x.png" alt="首页">
+                </span>
+                <i>首页</i>
+            </a>
+        </div>
+        <div class="col-xs-3 col-md-3 footer_ico">
+            <a href="paging/store.html" target="main">
+                <span class="icon_lump">
+                    <img src="uploads/shoping@2x.png" alt="商城">
+                </span>
+                <i>商城</i>
+            </a>
+        </div>
+        <div class="col-xs-3 col-md-3 footer_ico">
+            <a href="paging/science.html" target="main">
+                <span class="icon_lump">
+                    <img src="uploads/read@2x.png" alt="科普">
+                </span>
+                <i>科普</i>
+            </a>
+        </div>
+        <div class="col-xs-3 col-md-3 footer_ico">
+            <a href="paging/me.html" target="main">
+                <span class="icon_lump">
+                    <img src="uploads/me@2x.png" alt="我的">
+                </span>
+                <i>我的</i>
+            </a>
+        </div>
+    </div>
+    <!--    end-->
+</div>
+
+<!--引入flexible 实现 rem 自动-->
+<script src="lib/js/flexible.js"></script>
+</body>
+</html>

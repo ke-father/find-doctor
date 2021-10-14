@@ -1,0 +1,161 @@
+body {
+    display: flex;
+    background-image: linear-gradient(-45deg, #2896ed, #003dbf);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.title {
+
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.6rem;
+    z-index: 1;
+}
+
+.bImg {
+    width: 100%;
+    height: 100%;
+}
+
+.bImg img {
+    width: 100%;
+    height: 80%;
+}
+
+.topImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    height: 50%;
+    width: 100%;
+    /*background: url("../uploads/Component-Illustration 2@2x.png") no-repeat center;*/
+    /*background-size: 90%;*/
+}
+
+.topImg img {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 79%;
+}
+
+.to {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login, .reg {
+    display: none;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toLogin , .toReg {
+    width: 75%;
+    height: 1.467rem;
+    color: #3b5999;
+    font-size: 0.667rem;
+    text-align: center;
+    line-height: 1.467rem;
+    font-weight: 700;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.72rem;
+}
+
+.toLogin {
+    background-color: white;
+}
+
+.toReg {
+    margin-top: 8%;
+    background-color: #e9c517;
+}
+
+.callUs {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 0.027rem solid #ffffff;
+}
+
+.callUs a {
+    color: white;
+}
+
+.login_form,
+.reg_form {
+    padding: 0 0.4rem;
+}
+
+.printTop {
+    display: block;
+    margin-left: 0.267rem;
+    color: #036be6;
+    font-size: 0.347rem;
+}
+
+.login .printName:nth-child(2),
+.reg .printName:nth-child(2) {
+    margin-top: 0.533rem;
+}
+
+.printName input {
+    width: 100%;
+    height: 1.333rem;
+    padding-left: 0.4rem;
+    margin-top: 0.133rem;
+    background-color: white !important;
+    border: none;
+    border-radius: 0.667rem;
+    outline:none;
+    box-shadow: 0 0.027rem 0.133rem #b4b4b4
+}
+
+.login_input, .reg_input {
+    color: #b4b4b4;
+}
+
+.print_tt {
+    display: flex;
+    justify-content:space-between;
+    padding: 0 0.4rem;
+}
+
+.print_tt a {
+    font-size: 0.32rem;
+    color: #65a4f0;
+}
+
+#login_btn, #reg_btn {
+    margin-top: 0.533rem;
+    width: 100%;
+    height: 1.227rem;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.613rem;
+    /*background-color: #e9c813;*/
+    background-image: linear-gradient(#e6d405, #ecb926);
+}

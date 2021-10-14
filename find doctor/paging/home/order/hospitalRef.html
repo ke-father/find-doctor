@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--    引入bootstarp样式-->
     <link rel="stylesheet" href="../../../lib/css/bootstrap.css">
+    <!--    引入layui-->
+    <link rel="stylesheet" href="../../../lib/layui/css/layui.css">
     <!--    引入公共样式-->
     <link rel="stylesheet" href="../../../css/common.css">
     <!--    引入本页样式-->
@@ -22,13 +24,11 @@
     <a href="findHospital.html" class="glyphicon glyphicon-chevron-left arrow"></a>
 
     <div class="hospital_name">
-        <h1>解放军总医院（301医院）</h1>
-        <div class="hospital_tag">VR查看前往路线</div>
-        <div class="hospital_tag">三级甲等</div>
-        <div class="hospital_tag">全国综合排名第3</div>
-        <div class="hospital_tag">全国营养科排名第5</div>
-        <div class="hospital_tag">全国男科排名第4</div>
-        <div class="hospital_tag">查看全部</div>
+<!--        医院名占地-->
+    </div>
+
+    <div class="place">
+<!--        位置占地-->
     </div>
 
     <div class="way">
@@ -50,6 +50,8 @@
         </ul>
         <span class="deg_print">【温馨提示】去医院前先进行线上咨询，提前了解病情，避免乱花钱</span>
     </div>
+
+    <button type="submit" id="order_btn">确认预约</button>
 
     <div class="onLine">
         <div class="online_top">
@@ -88,9 +90,11 @@
     </div>
 
     <div class="hospital_intro">
-        <h3 class="deg_top">医院介绍</h3>
-        <p>中国人民解放军总医院前身是中国协学院第二临床学院...</p>
-        <i>查看详细介绍</i>
+        <i class="more">查看详情</i>
+        <i class="short">收起</i>
+        <div class="intro_main">
+<!--            这里是介绍占位-->
+        </div>
     </div>
 
     <div class="foot">
@@ -98,10 +102,37 @@
     </div>
 </div>
 
+<!--这里是医院列表-->
+<script type="text/html" id="hospital_name">
+    <h1>{{data.hospital_name}}</h1>
+    <div class="hospital_tag">VR查看前往路线</div>
+    <div class="hospital_tag">三级甲等</div>
+    <div class="hospital_tag">{{data.hospital_ranking}}</div>
+    <div class="hospital_tag">全国营养科排名第{{data.iddc_hospital}}</div>
+    <div class="hospital_tag">查看全部</div>
+</script>
+
+<!--这里是地址-->
+<script type="text/html" id="place">
+    <a href="javascript:;" id="hospital_place">{{hospital_place}}</a>
+</script>
+
+<!--这里是医院介绍-->
+<script type="text/html" id="hospital_evaluate">
+    <h3 class="deg_top">医院介绍</h3>
+    <p>{{hospital_referral}}</p>
+</script>
+
+<!--引入layui-->
+<script src="../../../lib/layui/layui.all.js"></script>
 <!--引入jquery-->
 <script src="../../../lib/js/jQuery.js"></script>
 <!--引入flexible 实现 rem 自动-->
 <script src="../../../lib/js/flexible.js"></script>
+<!--引入template-->
+<script src="../../../lib/js/template-web.js"></script>
+<!--引入配置文件-->
+<script src="../../../js/base.js"></script>
 <!--引入本页js-->
 <script src="../../../js/paging/home/order/hospitalRef.js"></script>
 </body>

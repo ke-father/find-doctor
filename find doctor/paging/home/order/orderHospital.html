@@ -1,10 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    引入bootstarp样式-->
+    <link rel="stylesheet" href="../../../lib/css/bootstrap.css">
+    <!--    引入layui-->
+    <link rel="stylesheet" href="../../../lib/layui/css/layui.css">
+    <!--    引入公共样式-->
+    <link rel="stylesheet" href="../../../css/common.css">
+    <!--    引入本页样式-->
+    <link rel="stylesheet" href="../../../css/paging/home/order/orderHospital.css">
+    <title>寻医</title>
 </head>
 <body>
-$END$
+<div class="container-fluid">
+    <!--    头部标题-->
+    <div class="title">
+        <span class="glyphicon glyphicon-chevron-left arrows"></span>
+        <a href="orderHospital.html">预约</a>
+    </div>
+    <!--    end-->
+
+    <ul class="orderList">
+<!--        预约列表占位-->
+    </ul>
+</div>
+
+<script type="text/html" id="order_list">
+    <li class="order_block">
+        <div class="order_left">
+            <h2></h2>
+            <span>{{user_place}}</span>
+            <i>{{order_date}}</i>
+        </div>
+    </li>
+</script>
+
+<!--引入layui-->
+<script src="../../../lib/layui/layui.all.js"></script>
+<!--引入jquery-->
+<script src="../../../lib/js/jQuery.js"></script>
+<!--引入flexible 实现 rem 自动-->
+<script src="../../../lib/js/flexible.js"></script>
+<!--引入template-->
+<script src="../../../lib/js/template-web.js"></script>
+<!--引入配置文件-->
+<script src="../../../js/base.js"></script>
+<!--引入本页js-->
+<script src="../../../js/paging/home/order/orderHospital.js"></script>
 </body>
 </html>

@@ -1,10 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    引入bootstarp样式-->
+    <link rel="stylesheet" href="../../lib/css/bootstrap.css">
+    <!--    引入layui-->
+    <link rel="stylesheet" href="../../lib/layui/css/layui.css">
+    <!--    引入cropper-->
+    <link rel="stylesheet" href="../../lib/cropper/cropper.css">
+    <!--    引入公共样式-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--    引入本页样式-->
+    <link rel="stylesheet" href="../../css/paging/me/userInfo.css">
+    <title>寻医</title>
 </head>
 <body>
-$END$
+<div class="container-fluid">
+    <!--    头部标题-->
+    <div class="title">
+        <span class="glyphicon glyphicon-chevron-left arrows"></span>
+        <a href="userInfo.html">个人信息</a>
+    </div>
+    <!--    end-->
+
+    <!--主要-->
+    <div class="main">
+        <form id="user_form" class="layui-form" lay-filter="userForm">
+            <div class="user_block">
+                <i>id: </i>
+                <input type="text" readonly name="iddc_user">
+            </div>
+            <div class="user_block">
+                <i>账号: </i>
+                <input type="text" readonly name="account">
+            </div>
+            <div class="user_block">
+                <i>昵称: </i>
+                <input type="text" name="nickname">
+            </div>
+            <div class="layui-card-body">
+                <h4 class="pic_name">头像: </h4>
+                <!-- 第一行的图片裁剪和预览区域 -->
+                <div class="row1">
+                    <!-- 图片裁剪区域 -->
+                    <div class="cropper-box">
+                        <!-- 这个 img 标签很重要，将来会把它初始化为裁剪区域 -->
+                        <img id="image" src="../../images/dog.jpg"/>
+                    </div>
+                    <!-- 图片的预览区域 -->
+                    <div class="preview-box">
+                        <div>
+                            <!-- 宽高为 100px 的预览区域 -->
+                            <div class="img-preview w100"></div>
+                            <p class="size">100 x 100</p>
+                        </div>
+                        <div>
+                            <!-- 宽高为 50px 的预览区域 -->
+                            <div class="img-preview w50"></div>
+                            <p class="size">50 x 50</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二行的按钮区域 -->
+                <div class="row2">
+                    <input type="file" id="avatar" accept="image/png,image/jpeg">
+                    <button type="button" class="layui-btn" id="uploading">上传</button>
+                    <button type="button" class="layui-btn layui-btn-danger" id="sure">确定</button>
+                </div>
+            </div>
+
+            <button id="put_btn" class="layui-btn" lay-submit lay-filter="*">确认修改</button>
+        </form>
+    </div>
+
+    <div class="foot">
+        这里是占位
+    </div>
+
+</div>
+
+<!--引入layui-->
+<script src="../../lib/layui/layui.all.js"></script>
+<!--引入jquery-->
+<script src="../../lib/js/jQuery.js"></script>
+<!--引入图片裁剪-->
+<script src="../../lib/cropper/Cropper.js"></script>
+<script src="../../lib/cropper/jquery-cropper.js"></script>
+<!--引入flexible 实现 rem 自动-->
+<script src="../../lib/js/flexible.js"></script>
+<!--引入配置文件-->
+<script src="../../js/base.js"></script>
+<!--引入本页js-->
+<script src="../../js/paging/me/userInfo.js"></script>
 </body>
 </html>

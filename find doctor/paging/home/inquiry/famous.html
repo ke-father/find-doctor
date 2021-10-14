@@ -31,81 +31,19 @@
     </div>
 
     <div class="junior">
-        <h3>专科门诊</h3>
-        <span>累计服务<i>309,979,806</i>人，好评率<i>92%</i></span>
+            <h3>专科门诊</h3>
+            <span>累计服务<i>309,979,806</i>人，好评率<i>92%</i></span>
         <div class="junior_main">
             <div class="swiper-container junior_echo">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <ul class="junior_ico">
-                            <li>
-                                <a href="javascript:;">
-                                    <span class="icon" style="background-color: #e5ebf9">
-                                        <img src="../../../uploads/kouqiang.png" alt="口腔颌面科">
-                                    </span>
-                                    <i>口腔颌面科</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <span class="icon" style="background-color: #ffeeed">
-                                        <img src="../../../uploads/neike.png" alt="内科">
-                                    </span>
-                                    <i>内科</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <span class="icon" style="background-color: #f4f5f8">
-                                        <img src="../../../uploads/yanke.png" alt="眼科">
-                                    </span>
-                                    <i>眼科</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="office.html">
-                                    <span class="icon" style="background-color: #fffce9">
-                                        <img src="../../../uploads/pifu.png" alt="皮肤科">
-                                    </span>
-                                    <i>皮肤科</i>
-                                </a>
-                            </li>
+                        <ul class="junior_ico first_icon">
+<!--                          这里是前四个图标占位-->
                         </ul>
                     </div>
                     <div class="swiper-slide">
-                        <ul class="junior_ico">
-                            <li>
-                                <a href="javascript:;">
-                                    <span class="icon" style="background-color: #e5ebf9">
-                                        <img src="../../../uploads/kouqiang.png" alt="口腔颌面科">
-                                    </span>
-                                    <i>口腔颌面科</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <span class="icon" style="background-color: #ffeeed">
-                                        <img src="../../../uploads/neike.png" alt="内科">
-                                    </span>
-                                    <i>内科</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <span class="icon" style="background-color: #f4f5f8">
-                                        <img src="../../../uploads/yanke.png" alt="眼科">
-                                    </span>
-                                    <i>眼科</i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <span class="icon" style="background-color: #fffce9">
-                                        <img src="../../../uploads/pifu.png" alt="皮肤科">
-                                    </span>
-                                    <i>皮肤科</i>
-                                </a>
-                            </li>
+                        <ul class="junior_ico last_icon">
+<!--                            这里是后四个图标占位-->
                         </ul>
                     </div>
                 </div>
@@ -117,51 +55,11 @@
 
     <div class="family">
         <div class="family_top">
-            <h3>口腔颌面科</h3>
-            <span>服务患者<i>589,563</i>，好评率<i>92.5%</i></span>
+<!--            这里是科室信息占位-->
         </div>
         <div class="family_main">
             <ul>
-                <li style="background-color: #ffeeed">
-                    <div class="family_left">
-                        <div class="doctor">
-                            <a href="javascript:;" class="doctor_name">王磊</a>
-                            <a href="javascript:;" class="doctor_ico" style="background-color: #ffdfdd">
-                                <img src="../../../uploads/dianhua.png" alt="电话">
-                            </a>
-                            <a href="javascript:;" class="doctor_ico" style="background-color: #f4e6e8">
-                                <img src="../../../uploads/shiping.png" alt="视屏">
-                            </a>
-                            <a href="javascript:;" class="doctor_ico" style="background-color: #ffedd9">
-                                <img src="../../../uploads/weizhi.png" alt="位置">
-                            </a>
-                        </div>
-                        <span>主治医师 眼科</span>
-                    </div>
-                    <a href="javascript:;">
-                        <img src="../../../uploads/Component-Doctor No -2@2x.png" alt="医生头像" class="family_right">
-                    </a>
-                </li>
-                <li style="background-color: #f4f5f8">
-                    <div class="family_left">
-                        <div class="doctor">
-                            <a href="javascript:;" class="doctor_name">刘毅</a>
-                            <a href="javascript:;" class="doctor_ico" style="background-color: #ffdfdd">
-                                <img src="../../../uploads/dianhua.png" alt="电话">
-                            </a>
-                            <a href="javascript:;" class="doctor_ico" style="background-color: #f4e6e8">
-                                <img src="../../../uploads/shiping.png" alt="视屏">
-                            </a>
-                            <a href="javascript:;" class="doctor_ico" style="background-color: #ffedd9">
-                                <img src="../../../uploads/weizhi.png" alt="位置">
-                            </a>
-                        </div>
-                        <span>副主治医师 眼科</span>
-                    </div>
-                    <a href="javascript:;">
-                        <img src="../../../uploads/Component-Doctor No -2@2x.png" alt="医生头像" class="family_right">
-                    </a>
-                </li>
+<!--                这里是医生列表占位-->
             </ul>
         </div>
     </div>
@@ -173,12 +71,78 @@
     <!--    end-->
 </div>
 
+<!--这里是导播栏 前4-->
+<script type="text/html" id="department_first">
+    {{each}}
+    <li>
+        <a href="copy_desub.html?famous={{$value.iddc_department}}">
+            <span class="icon">
+                <img src="{{$value.department_pic | pic}}" alt="口腔颌面科">
+            </span>
+            <i>{{$value.department_name}}</i>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--这是导播栏  后4-->
+<script type="text/html" id="department_last">
+    {{each}}
+    <li>
+        <a href="copy_desub.html?famous={{$value.iddc_department}}">
+            <span class="icon">
+                <img src="{{$value.department_pic | pic}}" alt="口腔颌面科">
+            </span>
+            <i>{{$value.department_name}}</i>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--这里是科室信息-->
+<script type="text/html" id="department_echo">
+    <h3>{{department_name}}</h3>
+    <span>服务患者<i>{{serve_number}}</i>，好评率<i>{{serve_evaluate | evaluate}}</i></span>
+</script>
+
+<!--这里是医生列表-->
+<script type="text/html" id="doctor_list">
+    {{each}}
+    <li>
+        <div class="family_left">
+            <div class="doctor">
+                <a href="doctorRef.html?famous={{$value.iddc_doctor}}" class="doctor_name">{{$value.doctor_name}}</a>
+                <a href="javascript:;" class="doctor_ico" style="background-color: #ffdfdd">
+                    <img src="../../../uploads/dianhua.png" alt="电话">
+                </a>
+                <a href="javascript:;" class="doctor_ico" style="background-color: #f4e6e8">
+                    <img src="../../../uploads/shiping.png" alt="视屏">
+                </a>
+                <a href="doctorRef.html?famous={{$value.iddc_doctor}}" class="doctor_ico" style="background-color: #ffedd9">
+                    <img src="../../../uploads/weizhi.png" alt="位置">
+                </a>
+            </div>
+            <span>{{$value.doctor_sketch}}</span>
+        </div>
+        <a href="doctorRef.html?famous={{$value.iddc_doctor}}">
+            <img src="{{$value.doctor_pic}}" alt="医生头像" class="family_right">
+        </a>
+    </li>
+    {{/each}}
+</script>
+
 <!--引入jquery-->
 <script src="../../../lib/js/jQuery.js"></script>
 <!--swiper js-->
 <script src="../../../lib/js/swiper-bundle.min.js"></script>
+<!--引入layui-->
+<script src="../../../lib/layui/layui.all.js"></script>
 <!--引入flexible 实现 rem 自动-->
 <script src="../../../lib/js/flexible.js"></script>
+<!--引入template-->
+<script src="../../../lib/js/template-web.js"></script>
+<!--引入配置项文件-->
+<script src="../../../js/base.js"></script>
 <!--引入本页js-->
 <script src="../../../js/paging/home/inquiry/famous.js"></script>
 <script>

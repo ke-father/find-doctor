@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>寻医</title>
+    <!--    引入公共样式-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--    引入页面样式-->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="main">
+    <h1 class="title">寻医</h1>
+    <div class="bImg">
+        <img src="uploads/bg-1@2x.png" alt="" id="bgd-img">
+    </div>
+    <div class="topImg">
+        <img src="uploads/loginBgd.png" alt="" id="top-img">
+    </div>
+    <div class="to">
+        <div class="toLogin">登录</div>
+        <div class="toReg">注册</div>
+        <span class="callUs"><a href="javascript:;">联系我们</a></span>    </div>
+
+    <!--    登录界面-->
+    <div class="login">
+        <form class="login_form" action="index.html">
+            <div class="printName">
+                <span class="printTop">填写手机号码</span>
+                <input type="text" name="userNumber" placeholder="请输入手机号码">
+            </div>
+            <div class="printName">
+                <span class="printTop">填写密码</span>
+                <input type="password" name="password" placeholder="请输入密码" class="login_input">
+            </div>
+            <div class="print_tt">
+                <span><a href="javascript:;" id="go_reg">免费注册</a></span>
+                <span><a href="javascript:;">忘记密码</a></span>
+            </div>
+            <input type="submit" value="登录" id="login_btn">
+        </form>
+    </div>
+    <!--    end-->
+
+    <!--    注册界面-->
+    <div class="reg">
+        <form class="reg_form" action="login.html">
+            <div class="printName">
+                <span class="printTop">填写手机号码</span>
+                <input type="text" name="userNumber" placeholder="请输入手机号码">
+            </div>
+            <div class="printName">
+                <span class="printTop">确认密码</span>
+                <input type="password" name="repassword" placeholder="请确认密码" class="reg_input">
+            </div>
+            <div class="print_tt">
+                <span></span>
+                <span><a href="javascript:;" id="go_login">去登录</a></span>
+            </div>
+            <input type="submit" value="注册" id="reg_btn">
+        </form>
+    </div>
+    <!--    end-->
+</div>
+
+<!--引入jQuery-->
+<script src="lib/js/jQuery.js"></script>
+<!--引入flexible js-->
+<script src="lib/js/flexible.js"></script>
+<!--引入本页js-->
+<script src="js/login.js"></script>
+</body>
+</html>
